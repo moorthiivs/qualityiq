@@ -14,3 +14,18 @@ sed -i 's|try_files $uri $uri/ =404;|try_files $uri $uri/ /index.php?$query_stri
 
 # Reload Nginx with updated configuration
 service nginx reload
+
+# Ensure Laravel storage directories exist and are writable
+cd /home/site/wwwroot
+mkdir -p storage/framework/sessions
+mkdir -p storage/framework/views
+mkdir -p storage/framework/cache/data
+mkdir -p storage/logs
+mkdir -p bootstrap/cache
+chmod -R 775 storage bootstrap/cache
+
+# Clear any stale caches from CI build
+php artisan config:clear 2>/dev/null
+php artisan route:clear 2>/dev/null
+php artisan view:clear 2>/dev/null
+php artisan cache:clear 2>/dev/null
