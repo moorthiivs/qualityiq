@@ -27,7 +27,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 
 });
-Route::get('/modals', [ConfigurationsController::class, 'listModals'])->name('list.modals');
+Route::get('/modals', [ConfigurationsController::class, 'listModals'])->name('api.list.modals');
 Route::get('/defects', [ConfigurationsController::class, 'listDefects'])->name('list.defects');
 Route::get('/categories', [ConfigurationsController::class, 'listCategories'])->name('list.categories');
 
