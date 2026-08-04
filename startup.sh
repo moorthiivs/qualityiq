@@ -1,24 +1,25 @@
 #!/bin/bash
 
-# Function to apply Nginx configuration updates after init_container starts Nginx
+# Function to safely update Azure Nginx configuration for Laravel without breaking FastCGI/PHP-FPM
 update_nginx() {
-    # Retry loop to wait for init_container.sh to create and start Nginx
-    for i in {1..15}; do
+    for i in {1..20}; do
         sleep 2
         if [ -f /etc/nginx/sites-available/default ]; then
-            if [ -f /home/site/wwwroot/default ]; then
-                cp /home/site/wwwroot/default /etc/nginx/sites-available/default
-            fi
+            # Update web root to Laravel's public directory
             sed -i 's|root /home/site/wwwroot;|root /home/site/wwwroot/public;|g' /etc/nginx/sites-available/default 2>/dev/null
+            
+            # Update try_files to pass requests to index.php
             sed -i 's|try_files $uri $uri/ =404;|try_files $uri $uri/ /index.php?$query_string;|g' /etc/nginx/sites-available/default 2>/dev/null
+
+            # Reload Nginx with updated configuration
             service nginx reload 2>/dev/null || nginx -s reload 2>/dev/null
-            echo "Nginx successfully updated and reloaded for Laravel routing."
+            echo "Nginx successfully updated for Laravel routing."
             break
         fi
     done
 }
 
-# Run update in background so it executes after init_container.sh starts services
+# Run update in background so it executes after init_container.sh initializes Nginx and FastCGI
 update_nginx &
 
 # Execute default container startup script
