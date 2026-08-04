@@ -1,9 +1,39 @@
 #!/bin/bash
 
-# Azure App Service runs init_container.sh FIRST, then calls this startup script.
-# Write Nginx config to ALL possible locations to ensure it takes effect.
+# Debug: dump all nginx configs to a shared location (accessible from Kudu)
+echo "=== Nginx Debug - $(date) ===" > /home/site/nginx_debug.log
 
-LARAVEL_NGINX_CONF='server {
+# List ALL nginx config files
+echo "--- All nginx config files ---" >> /home/site/nginx_debug.log
+find /etc/nginx -type f 2>/dev/null >> /home/site/nginx_debug.log
+
+# Dump current running nginx config
+echo "--- Current nginx -T ---" >> /home/site/nginx_debug.log
+nginx -T 2>&1 >> /home/site/nginx_debug.log
+
+# ============================================================
+# Strategy 1: Find and modify ALL existing Nginx config files
+# ============================================================
+for f in $(find /etc/nginx -type f \( -name "*.conf" -o -name "default" \) 2>/dev/null); do
+    # Change root to Laravel's public directory
+    sed -i 's|root /home/site/wwwroot;|root /home/site/wwwroot/public;|g' "$f"
+    sed -i 's|root /home/site/wwwroot/public/public;|root /home/site/wwwroot/public;|g' "$f"
+
+    # Replace existing try_files =404
+    sed -i 's|try_files $uri $uri/ =404;|try_files $uri $uri/ /index.php?$query_string;|g' "$f"
+
+    # If location / block exists but has NO try_files, inject one
+    if grep -q "location / {" "$f" 2>/dev/null; then
+        if ! grep -q "try_files" "$f" 2>/dev/null; then
+            sed -i '/location \/ {/a\        try_files $uri $uri/ /index.php?$query_string;' "$f"
+        fi
+    fi
+done
+
+# ============================================================
+# Strategy 2: Write complete config to common locations
+# ============================================================
+LARAVEL_CONF='server {
     listen 8080;
     listen [::]:8080;
     root /home/site/wwwroot/public;
@@ -25,49 +55,32 @@ LARAVEL_NGINX_CONF='server {
     }
 }'
 
-# Diagnostic: log current Nginx state before changes
-echo "=== BEFORE: Nginx config files ===" > /home/LogFiles/nginx_debug.log
-find /etc/nginx -type f \( -name "*.conf" -o -name "default" \) 2>/dev/null >> /home/LogFiles/nginx_debug.log
-echo "=== BEFORE: sites-available ===" >> /home/LogFiles/nginx_debug.log
-ls -la /etc/nginx/sites-available/ 2>/dev/null >> /home/LogFiles/nginx_debug.log
-echo "=== BEFORE: sites-enabled ===" >> /home/LogFiles/nginx_debug.log
-ls -la /etc/nginx/sites-enabled/ 2>/dev/null >> /home/LogFiles/nginx_debug.log
-echo "=== BEFORE: conf.d ===" >> /home/LogFiles/nginx_debug.log
-ls -la /etc/nginx/conf.d/ 2>/dev/null >> /home/LogFiles/nginx_debug.log
-echo "=== BEFORE: Full Nginx config dump ===" >> /home/LogFiles/nginx_debug.log
-nginx -T 2>&1 >> /home/LogFiles/nginx_debug.log
-
-# Write config to ALL possible Nginx config locations
-echo "$LARAVEL_NGINX_CONF" > /etc/nginx/sites-available/default 2>/dev/null
-echo "$LARAVEL_NGINX_CONF" > /etc/nginx/sites-enabled/default 2>/dev/null
+for target in /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default; do
+    if [ -d "$(dirname "$target")" ]; then
+        echo "$LARAVEL_CONF" > "$target" 2>/dev/null
+    fi
+done
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default 2>/dev/null
 
-# Also try conf.d if it exists
-if [ -d /etc/nginx/conf.d ]; then
-    echo "$LARAVEL_NGINX_CONF" > /etc/nginx/conf.d/default.conf 2>/dev/null
-fi
-
 # Test and reload Nginx
-echo "=== Nginx config test ===" >> /home/LogFiles/nginx_debug.log
-nginx -t 2>&1 >> /home/LogFiles/nginx_debug.log
-service nginx reload 2>&1 >> /home/LogFiles/nginx_debug.log
+echo "--- Config test result ---" >> /home/site/nginx_debug.log
+nginx -t 2>&1 >> /home/site/nginx_debug.log
+service nginx reload 2>&1 >> /home/site/nginx_debug.log
 
-echo "=== AFTER: Full Nginx config dump ===" >> /home/LogFiles/nginx_debug.log
-nginx -T 2>&1 >> /home/LogFiles/nginx_debug.log
+# Dump config AFTER reload
+echo "--- AFTER reload nginx -T ---" >> /home/site/nginx_debug.log
+nginx -T 2>&1 >> /home/site/nginx_debug.log
 
-# Ensure Laravel storage directories exist and are writable
+# ============================================================
+# Laravel setup
+# ============================================================
 cd /home/site/wwwroot
-mkdir -p storage/framework/sessions
-mkdir -p storage/framework/views
-mkdir -p storage/framework/cache/data
-mkdir -p storage/logs
-mkdir -p bootstrap/cache
+mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache
 chmod -R 775 storage bootstrap/cache
 
-# Clear any stale caches
 php artisan config:clear 2>/dev/null
 php artisan route:clear 2>/dev/null
 php artisan view:clear 2>/dev/null
 php artisan cache:clear 2>/dev/null
 
-echo "=== Startup complete ===" >> /home/LogFiles/nginx_debug.log
+echo "=== Startup complete ===" >> /home/site/nginx_debug.log
