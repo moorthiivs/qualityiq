@@ -1,0 +1,8 @@
+<step title="Incoming Request" date="2026-08-02T09:50:41.290" instance="cbdd36" url="/api/deployments/latest" method="GET" type="request" pid="834,1,21" Accept="*/*" Host="qualityiq-bnhwhpf4fnd8a5bu.scm.centralindia-01.azurewebsites.net" User-Agent="AZURECLI/2.74.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." x-ms-client-request-id="8b0230f3-8e57-11f1-8618-342eb79b3e5c" X-ARR-LOG-ID="8b0230f3-8e57-11f1-8618-342eb79b3e5c" CLIENT-IP="120.60.60.3:64669" X-SITE-DEPLOYMENT-ID="QualityIQ" WAS-DEFAULT-HOSTNAME="qualityiq-bnhwhpf4fnd8a5bu.scm.centralindia-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/latest" X-Client-IP="120.60.60.3" X-Client-Port="64669" >
+  <step title="DeploymentService.GetResult" date="2026-08-02T09:50:41.307" >
+    <step title="DeploymentService.GetLatestDeployment" date="2026-08-02T09:50:41.309" >
+      <step title="DeploymentManager.GetResults" date="2026-08-02T09:50:41.339" /><!-- duration: 266ms -->
+    </step><!-- duration: 307ms -->
+  </step><!-- duration: 317ms -->
+  <step title="Outgoing response" date="2026-08-02T09:50:41.636" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 9ms -->
+</step><!-- duration: 364ms -->

@@ -1,0 +1,168 @@
+2026-08-02T13:31:37  Fetching changes.
+2026-08-02T13:31:37    Starting  LocalZipHandler
+2026-08-02T13:31:37    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/c323ef78-15ad-4a9e-a5dd-a93c47bf4a15.zip (9.93 MB) to /tmp/zipdeploy/extracted
+2026-08-02T13:31:48  Updating submodules.
+2026-08-02T13:31:49  Preparing deployment for commit id '0d4f0707-a'.
+2026-08-02T13:31:49  PreDeployment: context.CleanOutputPath False
+2026-08-02T13:31:49  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-08-02T13:31:49  Repository path is /tmp/zipdeploy/extracted
+2026-08-02T13:31:49  Running oryx build...
+2026-08-02T13:31:49    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform php --platform-version 8.2 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8def09a67ebe8ce | tee /tmp/oryx-build.log
+2026-08-02T13:31:54    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-08-02T13:31:54    You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-08-02T13:31:54    
+2026-08-02T13:31:54    Oryx Version: 0.2.20260513.1+5c94136d0d5c06204a00d688dc7aea902452e52c, Commit: 5c94136d0d5c06204a00d688dc7aea902452e52c, ReleaseTagName: 20260513.1
+2026-08-02T13:31:54    
+2026-08-02T13:31:54    Build Operation ID: 1eca0884fdb9bd4f
+2026-08-02T13:31:55    Repository Commit : 0d4f0707-a37e-4ef0-9b6c-7f39637995bf
+2026-08-02T13:31:55    OS Type           : bullseye
+2026-08-02T13:31:55    Image Type        : githubactions
+2026-08-02T13:31:55    
+2026-08-02T13:31:55    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-08-02T13:31:55    Backup SDK Storage URL: 
+2026-08-02T13:31:55    ACR SDK Registry URL: (not set)
+2026-08-02T13:31:55    SDK provider status:
+2026-08-02T13:31:55      External ACR SDK provider: Enabled
+2026-08-02T13:31:55      External SDK provider: Enabled
+2026-08-02T13:31:55      Direct ACR SDK provider: Disabled
+2026-08-02T13:31:55      Blob SDK provider: Enabled
+2026-08-02T13:31:55    External ACR SDK provider is enabled. Only using user-specified platform: php
+2026-08-02T13:31:55    Detecting platforms...
+2026-08-02T13:31:56    External ACR provider resolved version '8.2.30' for php.
+2026-08-02T13:31:56    Version resolved using external ACR SDK provider.
+2026-08-02T13:31:57    Version resolved using external ACR SDK provider.
+2026-08-02T13:31:57    Detected following platforms:
+2026-08-02T13:31:57      php: 8.2.30
+2026-08-02T13:31:57    Requesting SDK from ACR via external provider: php 8.2.30 (bullseye)
+2026-08-02T13:31:58    Successfully pulled SDK from ACR via external provider: php 8.2.30
+2026-08-02T13:31:58    SDK for 'php' version '8.2.30' fetched via external ACR provider.
+2026-08-02T13:31:58    Requesting SDK from ACR via external provider: php-composer 2.6.2 (bullseye)
+2026-08-02T13:31:59    Successfully pulled SDK from ACR via external provider: php-composer 2.6.2
+2026-08-02T13:31:59    SDK for 'php-composer' version '2.6.2' fetched via external ACR provider.
+2026-08-02T13:31:59    Version '8.2.30' of platform 'php' is not installed. Generating script to install it...
+2026-08-02T13:32:03    
+2026-08-02T13:32:03    Using intermediate directory '/tmp/8def09a67ebe8ce'.
+2026-08-02T13:32:03    
+2026-08-02T13:32:03    Copying files to the intermediate directory...
+2026-08-02T13:32:39    Copying files to intermediate directory done in 36 sec(s).
+2026-08-02T13:32:39    
+2026-08-02T13:32:39    Source directory     : /tmp/8def09a67ebe8ce
+2026-08-02T13:32:39    Destination directory: /home/site/wwwroot
+2026-08-02T13:32:39    
+2026-08-02T13:32:39    Installing platform...
+2026-08-02T13:32:40    
+2026-08-02T13:32:40    Downloading and extracting 'php' version '8.2.30' to '/tmp/oryx/platforms/php/8.2.30'...
+2026-08-02T13:32:40    Detected image debian flavor: bullseye.
+2026-08-02T13:32:40    SDK binary download was skipped. Looking for cached tarball...
+2026-08-02T13:32:40    Found tarball at /var/OryxAcrSdks/php/php-bullseye-8.2.30.tar.gz
+2026-08-02T13:32:43    Successfully extracted php version 8.2.30 from cached tarball.
+2026-08-02T13:32:43    
+2026-08-02T13:32:43    
+2026-08-02T13:32:43    Downloading and extracting 'php-composer' version '2.6.2' to '/tmp/oryx/platforms/php-composer/2.6.2'...
+2026-08-02T13:32:43    Detected image debian flavor: bullseye.
+2026-08-02T13:32:43    SDK binary download was skipped. Looking for cached tarball...
+2026-08-02T13:32:43    Found tarball at /var/OryxAcrSdks/php-composer/php-composer-bullseye-2.6.2.tar.gz
+2026-08-02T13:32:43    Successfully extracted php-composer version 2.6.2 from cached tarball.
+2026-08-02T13:32:43    
+2026-08-02T13:32:43    Platform installation done in 4 sec(s).
+2026-08-02T13:32:44    Running build script snippets...
+2026-08-02T13:32:44    PHP executable: /tmp/oryx/platforms/php/8.2.30/bin/php
+2026-08-02T13:32:44    Composer archive: /tmp/oryx/platforms/php-composer/2.6.2/composer.phar
+2026-08-02T13:32:44    Running 'composer install --ignore-platform-reqs --no-interaction'...
+2026-08-02T13:32:44    
+2026-08-02T13:32:46    Installing dependencies from lock file (including require-dev)
+2026-08-02T13:32:46    Verifying lock file contents can be installed on current platform.
+2026-08-02T13:32:46    Package operations: 38 installs, 0 updates, 0 removals
+2026-08-02T13:32:47        0 [>---------------------------]    0 [->--------------------------]
+2026-08-02T13:32:47      - Installing fakerphp/faker (v1.23.0): Extracting archive
+2026-08-02T13:32:47      - Installing laravel/breeze (v1.25.0): Extracting archive
+2026-08-02T13:32:47      - Installing laravel/pint (v1.13.3): Extracting archive
+2026-08-02T13:32:47      - Installing symfony/yaml (v6.3.3): Extracting archive
+2026-08-02T13:32:48      - Installing laravel/sail (v1.25.0): Extracting archive
+2026-08-02T13:32:48      - Installing hamcrest/hamcrest-php (v2.0.1): Extracting archive
+2026-08-02T13:32:48      - Installing mockery/mockery (1.6.6): Extracting archive
+2026-08-02T13:32:48      - Installing filp/whoops (2.15.3): Extracting archive
+2026-08-02T13:32:48      - Installing nunomaduro/collision (v7.10.0): Extracting archive
+2026-08-02T13:32:48      - Installing sebastian/version (4.0.1): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/type (4.0.0): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/recursion-context (5.0.0): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/object-reflector (3.0.0): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/object-enumerator (5.0.0): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/global-state (6.0.1): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/exporter (5.1.1): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/environment (6.0.1): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/diff (5.0.3): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/comparator (5.0.1): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/code-unit (2.0.0): Extracting archive
+2026-08-02T13:32:49      - Installing sebastian/cli-parser (2.0.0): Extracting archive
+2026-08-02T13:32:49      - Installing phpunit/php-timer (6.0.0): Extracting archive
+2026-08-02T13:32:49      - Installing phpunit/php-text-template (3.0.1): Extracting archive
+2026-08-02T13:32:49      - Installing phpunit/php-invoker (4.0.0): Extracting archive
+2026-08-02T13:32:50      - Installing phpunit/php-file-iterator (4.1.0): Extracting archive
+2026-08-02T13:32:50      - Installing theseer/tokenizer (1.2.1): Extracting archive
+2026-08-02T13:32:50      - Installing sebastian/lines-of-code (2.0.1): Extracting archive
+2026-08-02T13:32:50      - Installing sebastian/complexity (3.1.0): Extracting archive
+2026-08-02T13:32:50      - Installing sebastian/code-unit-reverse-lookup (3.0.0): Extracting archive
+2026-08-02T13:32:50      - Installing phpunit/php-code-coverage (10.1.7): Extracting archive
+2026-08-02T13:32:50      - Installing phar-io/version (3.2.1): Extracting archive
+2026-08-02T13:32:50      - Installing phar-io/manifest (2.0.3): Extracting archive
+2026-08-02T13:32:51      - Installing myclabs/deep-copy (1.11.1): Extracting archive
+2026-08-02T13:32:51      - Installing phpunit/phpunit (10.4.1): Extracting archive
+2026-08-02T13:32:51      - Installing spatie/backtrace (1.5.3): Extracting archive
+2026-08-02T13:32:51      - Installing spatie/flare-client-php (1.4.2): Extracting archive
+2026-08-02T13:32:51      - Installing spatie/ignition (1.11.2): Extracting archive
+2026-08-02T13:32:51      - Installing spatie/laravel-ignition (2.3.1): Extracting archive
+2026-08-02T13:32:52      0/38 [>---------------------------]   0%
+2026-08-02T13:32:52      7/38 [=====>----------------------]  18%
+2026-08-02T13:32:53      9/38 [======>---------------------]  23%
+2026-08-02T13:32:54     17/38 [============>---------------]  44%
+2026-08-02T13:32:54     19/38 [==============>-------------]  50%
+2026-08-02T13:32:55     27/38 [===================>--------]  71%
+2026-08-02T13:32:56     29/38 [=====================>------]  76%
+2026-08-02T13:32:56     35/38 [=========================>--]  92%
+2026-08-02T13:32:56     38/38 [============================] 100%
+2026-08-02T13:32:57    Generating optimized autoload files
+2026-08-02T13:33:09    > Illuminate\Foundation\ComposerScripts::postAutoloadDump
+2026-08-02T13:33:09    > @php artisan package:discover --ansi
+2026-08-02T13:33:10    
+2026-08-02T13:33:10      [37;44m INFO [39;49m Discovering packages.  
+2026-08-02T13:33:10    
+2026-08-02T13:33:10      laravel/breeze [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      laravel/passport [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      laravel/sail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      laravel/sanctum [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11      spatie/laravel-ignition [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-08-02T13:33:11    
+2026-08-02T13:33:11    Build script snippets done in 26 sec(s).
+2026-08-02T13:33:11    Preparing output...
+2026-08-02T13:33:11    Using standard output preparation...
+2026-08-02T13:33:11    
+2026-08-02T13:33:11    90 packages you are using are looking for funding.
+2026-08-02T13:33:11    Copying files to destination directory '/home/site/wwwroot'...
+2026-08-02T13:33:11    Use the `composer fund` command to find out more!
+2026-08-02T13:34:08    Copying to destination directory done in 57 sec(s).
+2026-08-02T13:34:08    Total time for destination directory preparation done in 57 sec(s).
+2026-08-02T13:34:08    
+2026-08-02T13:34:08    Removing existing manifest file
+2026-08-02T13:34:08    Creating a manifest file...
+2026-08-02T13:34:08    Manifest file created.
+2026-08-02T13:34:08    Copying .ostype to manifest output directory.
+2026-08-02T13:34:09    
+2026-08-02T13:34:09    Total execution done in 126 sec(s).
+2026-08-02T13:34:13  Running post deployment command(s)...
+2026-08-02T13:34:13  
+2026-08-02T13:34:13  Generating summary of Oryx build
+2026-08-02T13:34:14  Parsing the build logs
+2026-08-02T13:34:14  Found 0 issue(s)
+2026-08-02T13:34:14  
+2026-08-02T13:34:15  Build Summary :
+2026-08-02T13:34:15  ===============
+2026-08-02T13:34:15  Errors (0)
+2026-08-02T13:34:16  Warnings (0)
+2026-08-02T13:34:16  
+2026-08-02T13:34:16  Triggering container recycle for OneDeploy by adding/updating restartTrigger.txt to the site root path
+2026-08-02T13:34:17  Deployment successful. deployer = OneDeploy deploymentPath = OneDeploy

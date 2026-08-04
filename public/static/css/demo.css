@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* All styles created for demo purposes only, you may not need this for your project */
+.demo-button button {
+  margin-bottom: 5px; }
+
+.demo-icons li {
+  margin-bottom: 50px;
+  text-align: center; }
+
+.demo-icons .lnr,
+.demo-icons .fas,
+.demo-icons .fa {
+  font-size: 28px; }
+
+.demo-icons .cssclass {
+  display: block;
+  margin-top: 5px;
+  margin-left: 5px; }
+
+/*# sourceMappingURL=demo.css.map */
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+width: 260px;  background: #F6F6F6 0% 0% no-repeat padding-box;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #1E445C;
+  padding: 16px;
+  text-decoration: none;
+  font: normal normal normal 17px/40px Poppins;
+}
+ 
+.fa{
+color: #ef4e37;
+}
+.material-icons {
+  /* Support for IE. */
+  color: #ef4e37;
+font-size: 16px;
+}
+
+.sidebar a.active {
+ background: #EBEBEB 0% 0% no-repeat padding-box;
+color: #ef4e37;
+
+}
+
+.sidebar a:hover:not(.active) {
+   background: #EBEBEB 0% 0% no-repeat padding-box;
+: #ffffff;
+color:  var(--unnamed-color-ef4e37);
+}
+
+div.content {
+  margin-left: 260px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.box>.condenser{
+color: var(--unnamed-color-ef4e37);
+text-align: left;
+font: normal normal 600 22px/70px Poppins;
+letter-spacing: 0px;
+color: #EF4E37;
+  }
+.box>.condenser1{
+    color: #1E445C;
+
+font: normal normal 600 22px/70px Poppins;
+letter-spacing: 0px;
+color: #1E445C;
+  }
+  .back{
+width: 35px;
+height: 39px;
+background: #1E445C 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 6px #00000029;
+border-radius: 6px;
+opacity: 1;
+text-align: center;
+ }
+  .btn-huge{
+    padding-top:20px;
+    padding-bottom:20px;
+}

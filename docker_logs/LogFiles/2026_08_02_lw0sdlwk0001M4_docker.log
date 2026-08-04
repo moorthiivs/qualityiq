@@ -1,0 +1,623 @@
+2026-08-02T10:06:26.4765890Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:06:29.5459933Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:06:29.5460960Z Container start method called.
+2026-08-02T10:06:29.5553174Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:06:29.5554313Z Establishing network.
+2026-08-02T10:06:29.5555397Z Pulling image: appsvc/php:8.4-fpm_20260428.5.tuxprod.
+2026-08-02T10:08:42.6389455Z Image appsvc/php:8.4-fpm_20260428.5.tuxprod is pulled from registry 10.1.0.5:13209
+2026-08-02T10:08:42.6494168Z Container is starting.
+2026-08-02T10:08:42.7148573Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:08:42.7206610Z Establishing user namespace if not established already.
+2026-08-02T10:08:42.7236377Z Establishing network if not established already.
+2026-08-02T10:08:42.7311467Z Mounting volumes.
+2026-08-02T10:08:42.7502040Z Nested mountpoint 
+2026-08-02T10:08:42.8343535Z Nested mountpoint volatile/logs
+2026-08-02T10:08:43.0782101Z Nested mountpoint 
+2026-08-02T10:08:43.1685432Z Nested mountpoint 
+2026-08-02T10:08:43.3725090Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:08:43.3727458Z Creating container.
+2026-08-02T10:08:43.3728225Z Creating pipes for streaming container io.
+2026-08-02T10:08:43.3729114Z Creating stdout named pipe at /podr/container/pipe/85b20c32fa52_qualityiq/stdout_5b82f838fcb542e2920ea9951048d68a.
+2026-08-02T10:08:43.3891795Z Successfully created stdout named pipe at: /podr/container/pipe/85b20c32fa52_qualityiq/stdout_5b82f838fcb542e2920ea9951048d68a.
+2026-08-02T10:08:43.3909779Z Opening named pipe /podr/container/pipe/85b20c32fa52_qualityiq/stdout_5b82f838fcb542e2920ea9951048d68a for reading in non-blocking mode.
+2026-08-02T10:08:43.4094659Z Successfully opened named pipe: /podr/container/pipe/85b20c32fa52_qualityiq/stdout_5b82f838fcb542e2920ea9951048d68a.
+2026-08-02T10:08:43.4095840Z Successfully removed non-blocking flag from /podr/container/pipe/85b20c32fa52_qualityiq/stdout_5b82f838fcb542e2920ea9951048d68a.
+2026-08-02T10:08:43.4350666Z Creating stderr named pipe at /podr/container/pipe/85b20c32fa52_qualityiq/stderr_c29fce806b614bbb9c9191f14e719147.
+2026-08-02T10:08:43.4352509Z Successfully created stderr named pipe at: /podr/container/pipe/85b20c32fa52_qualityiq/stderr_c29fce806b614bbb9c9191f14e719147.
+2026-08-02T10:08:43.4353102Z Opening named pipe /podr/container/pipe/85b20c32fa52_qualityiq/stderr_c29fce806b614bbb9c9191f14e719147 for reading in non-blocking mode.
+2026-08-02T10:08:43.4353915Z Successfully opened named pipe: /podr/container/pipe/85b20c32fa52_qualityiq/stderr_c29fce806b614bbb9c9191f14e719147.
+2026-08-02T10:08:43.4354494Z Successfully removed non-blocking flag from /podr/container/pipe/85b20c32fa52_qualityiq/stderr_c29fce806b614bbb9c9191f14e719147.
+2026-08-02T10:08:43.4732217Z Creating container with image: appsvc/php:8.4-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod
+2026-08-02T10:08:44.7330359Z Starting container: 85b20c32fa52_qualityiq.
+2026-08-02T10:08:44.8580249Z Starting watchers and probes.
+2026-08-02T10:08:44.8736076Z Starting metrics collection.
+2026-08-02T10:08:44.8745595Z Container is running.
+2026-08-02T10:08:44.8748319Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:08:45.0472957Z Container start method finished after 135501 ms.
+2026-08-02T10:08:45.0838822Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:08:45.0839866Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:12:35.2596267Z Site startup probe failed after 230.0610021 seconds.
+2026-08-02T10:12:35.7303587Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:12:35.8125318Z Failed to start site. Revert by stopping site.
+2026-08-02T10:12:35.8484631Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:12:35.8773646Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:12:35.8859389Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:12:35.9643204Z Stop and delete container. Retry count = 0
+2026-08-02T10:12:35.9648448Z Stopping container: 85b20c32fa52_qualityiq.
+2026-08-02T10:12:41.1555521Z Deleting container: 85b20c32fa52_qualityiq. Retry count = 0
+2026-08-02T10:12:41.5616438Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:12:41.5686848Z Container is terminated. Total time elapsed: 5676 ms.
+2026-08-02T10:12:41.5688458Z Site container: qualityiq terminated during site startup.
+2026-08-02T10:12:41.6384720Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site container: qualityiq terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T10:12:41.6788181Z Site: qualityiq stopped.
+2026-08-02T10:12:41.6882682Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site container: qualityiq terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T10:12:42.1718181Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site container: qualityiq terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T10:12:42.6681976Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site stopped at 08/02/2026 10:12:42 (UTC), DetailsLevel: ERR
+2026-08-02T10:12:43.3711931Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site stopped at 08/02/2026 10:12:42 (UTC), DetailsLevel: ERR
+2026-08-02T10:12:49.3534331Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site stopped at 08/02/2026 10:12:42 (UTC), DetailsLevel: ERR
+2026-08-02T10:12:51.6257166Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site stopped at 08/02/2026 10:12:42 (UTC), DetailsLevel: ERR
+2026-08-02T10:12:51.6258107Z Container start method called.
+2026-08-02T10:12:51.6258620Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pulling image 10.1.0.5:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:12:51.6259211Z Establishing network.
+2026-08-02T10:12:51.6537409Z Pulling image: appsvc/php:8.4-fpm_20260428.5.tuxprod.
+2026-08-02T10:12:52.1840781Z Container is starting.
+2026-08-02T10:12:52.1842299Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:12:52.1843377Z Establishing user namespace if not established already.
+2026-08-02T10:12:52.1844558Z Establishing network if not established already.
+2026-08-02T10:12:52.1905339Z Mounting volumes.
+2026-08-02T10:12:52.1917716Z Nested mountpoint 
+2026-08-02T10:12:52.2594630Z Nested mountpoint volatile/logs
+2026-08-02T10:12:52.3033912Z Nested mountpoint 
+2026-08-02T10:12:52.3156917Z Nested mountpoint 
+2026-08-02T10:12:52.5198674Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:12:52.5200031Z Creating container.
+2026-08-02T10:12:52.5201133Z Creating pipes for streaming container io.
+2026-08-02T10:12:52.5202227Z Creating stdout named pipe at /podr/container/pipe/32238b7fdd7a_qualityiq/stdout_7533b1cd600c4abfbffcb8835ad24b1e.
+2026-08-02T10:12:52.5246330Z Successfully created stdout named pipe at: /podr/container/pipe/32238b7fdd7a_qualityiq/stdout_7533b1cd600c4abfbffcb8835ad24b1e.
+2026-08-02T10:12:52.5250541Z Opening named pipe /podr/container/pipe/32238b7fdd7a_qualityiq/stdout_7533b1cd600c4abfbffcb8835ad24b1e for reading in non-blocking mode.
+2026-08-02T10:12:52.5269838Z Successfully opened named pipe: /podr/container/pipe/32238b7fdd7a_qualityiq/stdout_7533b1cd600c4abfbffcb8835ad24b1e.
+2026-08-02T10:12:52.5271106Z Successfully removed non-blocking flag from /podr/container/pipe/32238b7fdd7a_qualityiq/stdout_7533b1cd600c4abfbffcb8835ad24b1e.
+2026-08-02T10:12:52.5273309Z Creating stderr named pipe at /podr/container/pipe/32238b7fdd7a_qualityiq/stderr_34b26279fa4f41ef8715691c789d2876.
+2026-08-02T10:12:52.5276786Z Successfully created stderr named pipe at: /podr/container/pipe/32238b7fdd7a_qualityiq/stderr_34b26279fa4f41ef8715691c789d2876.
+2026-08-02T10:12:52.5278571Z Opening named pipe /podr/container/pipe/32238b7fdd7a_qualityiq/stderr_34b26279fa4f41ef8715691c789d2876 for reading in non-blocking mode.
+2026-08-02T10:12:52.5280684Z Successfully opened named pipe: /podr/container/pipe/32238b7fdd7a_qualityiq/stderr_34b26279fa4f41ef8715691c789d2876.
+2026-08-02T10:12:52.5281301Z Successfully removed non-blocking flag from /podr/container/pipe/32238b7fdd7a_qualityiq/stderr_34b26279fa4f41ef8715691c789d2876.
+2026-08-02T10:12:52.5362654Z Creating container with image: appsvc/php:8.4-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod
+2026-08-02T10:12:53.6620240Z Starting container: 32238b7fdd7a_qualityiq.
+2026-08-02T10:12:53.8156095Z Starting watchers and probes.
+2026-08-02T10:12:53.8312917Z Starting metrics collection.
+2026-08-02T10:12:53.8322085Z Container is running.
+2026-08-02T10:12:53.8341130Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:12:54.1097978Z Container start method finished after 2483 ms.
+2026-08-02T10:12:54.1099861Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:12:54.1100161Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:13:46.2097669Z Site startup probe succeeded after 52.0913449 seconds.
+2026-08-02T10:13:46.4785002Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site startup probe succeeded after 52.0913449 seconds., DetailsLevel: INFO
+2026-08-02T10:13:47.2783740Z Site is running with deployment version: 65e43aad-70a0-4838-98cf-c1f2b6a17edc
+2026-08-02T10:13:47.2787844Z Site started.
+2026-08-02T10:13:47.2789100Z State: Started, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:13:47 (UTC), DetailsLevel: INFO
+2026-08-02T10:13:47.3927022Z Site is running with patch version PHP-8.4.16
+2026-08-02T10:17:01.4933694Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:17:11.2215563Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:17:11.2217648Z Container start method called.
+2026-08-02T10:17:11.2218393Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:17:11.2219074Z Establishing network.
+2026-08-02T10:17:11.2221921Z Pulling image: appsvc/php:8.4-fpm_20260428.5.tuxprod.
+2026-08-02T10:17:16.5227415Z Image appsvc/php:8.4-fpm_20260428.5.tuxprod is pulled from registry 10.1.0.7:13209
+2026-08-02T10:17:16.5228532Z Container is starting.
+2026-08-02T10:17:16.5229618Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:17:16.5230234Z Establishing user namespace if not established already.
+2026-08-02T10:17:16.5230767Z Establishing network if not established already.
+2026-08-02T10:17:16.5231506Z Mounting volumes.
+2026-08-02T10:17:16.5232529Z Nested mountpoint 
+2026-08-02T10:17:16.5784051Z Nested mountpoint volatile/logs
+2026-08-02T10:17:16.7178513Z Nested mountpoint 
+2026-08-02T10:17:16.9215843Z Nested mountpoint 
+2026-08-02T10:17:17.1304770Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:17:17.1305725Z Creating container.
+2026-08-02T10:17:17.1306342Z Creating pipes for streaming container io.
+2026-08-02T10:17:17.1307024Z Creating stdout named pipe at /podr/container/pipe/84e199d8d8a5_qualityiq/stdout_e2aade8a24594aa0bb6ef18272783143.
+2026-08-02T10:17:17.1309571Z Successfully created stdout named pipe at: /podr/container/pipe/84e199d8d8a5_qualityiq/stdout_e2aade8a24594aa0bb6ef18272783143.
+2026-08-02T10:17:17.1310672Z Opening named pipe /podr/container/pipe/84e199d8d8a5_qualityiq/stdout_e2aade8a24594aa0bb6ef18272783143 for reading in non-blocking mode.
+2026-08-02T10:17:17.1311707Z Successfully opened named pipe: /podr/container/pipe/84e199d8d8a5_qualityiq/stdout_e2aade8a24594aa0bb6ef18272783143.
+2026-08-02T10:17:17.1312270Z Successfully removed non-blocking flag from /podr/container/pipe/84e199d8d8a5_qualityiq/stdout_e2aade8a24594aa0bb6ef18272783143.
+2026-08-02T10:17:17.1500425Z Creating stderr named pipe at /podr/container/pipe/84e199d8d8a5_qualityiq/stderr_d9fc72a8d35641d6bf958bc89741735b.
+2026-08-02T10:17:17.1503821Z Successfully created stderr named pipe at: /podr/container/pipe/84e199d8d8a5_qualityiq/stderr_d9fc72a8d35641d6bf958bc89741735b.
+2026-08-02T10:17:17.1504640Z Opening named pipe /podr/container/pipe/84e199d8d8a5_qualityiq/stderr_d9fc72a8d35641d6bf958bc89741735b for reading in non-blocking mode.
+2026-08-02T10:17:17.1506668Z Successfully opened named pipe: /podr/container/pipe/84e199d8d8a5_qualityiq/stderr_d9fc72a8d35641d6bf958bc89741735b.
+2026-08-02T10:17:17.1507434Z Successfully removed non-blocking flag from /podr/container/pipe/84e199d8d8a5_qualityiq/stderr_d9fc72a8d35641d6bf958bc89741735b.
+2026-08-02T10:17:17.2118875Z Creating container with image: appsvc/php:8.4-fpm_20260428.5.tuxprod from registry: 10.1.0.7:13209 and fully qualified image name: 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod
+2026-08-02T10:17:20.8403733Z Starting container: 84e199d8d8a5_qualityiq.
+2026-08-02T10:17:21.2703463Z Starting watchers and probes.
+2026-08-02T10:17:21.2720989Z Starting metrics collection.
+2026-08-02T10:17:21.3020774Z Container is running.
+2026-08-02T10:17:21.3032019Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:17:22.2004856Z Container start method finished after 10978 ms.
+2026-08-02T10:17:22.2006755Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:17:22.2007084Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:17:50.9614227Z Site startup probe failed after 28.7239275 seconds.
+2026-08-02T10:17:51.8412754Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:17:51.9189115Z Failed to start site. Revert by stopping site.
+2026-08-02T10:17:51.9574405Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:17:52.0126227Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:17:52.0128664Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:17:52.1194990Z Stop and delete container. Retry count = 0
+2026-08-02T10:17:52.1196353Z Stopping container: 84e199d8d8a5_qualityiq.
+2026-08-02T10:17:57.3935268Z Deleting container: 84e199d8d8a5_qualityiq. Retry count = 0
+2026-08-02T10:17:57.8610149Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:17:57.8633950Z Container is terminated. Total time elapsed: 5849 ms.
+2026-08-02T10:17:57.8638881Z Site container: qualityiq terminated during site startup.
+2026-08-02T10:17:57.8645401Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site container: qualityiq terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T10:17:57.8716059Z Site: qualityiq stopped.
+2026-08-02T10:18:19.3832073Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:13:47 (UTC), DetailsLevel: INFO
+2026-08-02T10:18:19.3852832Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:12:35, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:13:47 (UTC), DetailsLevel: INFO
+2026-08-02T10:18:19.3854361Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:18:19.4112236Z Stop and delete container. Retry count = 0
+2026-08-02T10:18:19.4113253Z Stopping container: 32238b7fdd7a_qualityiq.
+2026-08-02T10:18:24.5884435Z Deleting container: 32238b7fdd7a_qualityiq. Retry count = 0
+2026-08-02T10:18:25.0281662Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:18:25.0361670Z Container is terminated. Total time elapsed: 5635 ms.
+2026-08-02T10:18:25.0365803Z Site: qualityiq stopped.
+2026-08-02T10:19:06.3046401Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 10:17:58 (UTC), DetailsLevel: ERR
+2026-08-02T10:19:08.9482862Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 10:17:58 (UTC), DetailsLevel: ERR
+2026-08-02T10:19:08.9484151Z Container start method called.
+2026-08-02T10:19:08.9484684Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pulling image 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:19:08.9485333Z Establishing network.
+2026-08-02T10:19:08.9486038Z Pulling image: appsvc/php:8.4-fpm_20260428.5.tuxprod.
+2026-08-02T10:19:09.6271950Z Container is starting.
+2026-08-02T10:19:09.6272944Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:19:09.6273616Z Establishing user namespace if not established already.
+2026-08-02T10:19:09.6274285Z Establishing network if not established already.
+2026-08-02T10:19:09.6275013Z Mounting volumes.
+2026-08-02T10:19:09.6275950Z Nested mountpoint 
+2026-08-02T10:19:09.6776019Z Nested mountpoint volatile/logs
+2026-08-02T10:19:09.7742386Z Nested mountpoint 
+2026-08-02T10:19:09.8589363Z Nested mountpoint 
+2026-08-02T10:19:09.9259776Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:19:09.9825909Z Creating container.
+2026-08-02T10:19:09.9834551Z Creating pipes for streaming container io.
+2026-08-02T10:19:09.9844661Z Creating stdout named pipe at /podr/container/pipe/36b8253fde66_qualityiq/stdout_c51b32fbb7a84c70838b07018f26b2d2.
+2026-08-02T10:19:09.9915720Z Successfully created stdout named pipe at: /podr/container/pipe/36b8253fde66_qualityiq/stdout_c51b32fbb7a84c70838b07018f26b2d2.
+2026-08-02T10:19:09.9916766Z Opening named pipe /podr/container/pipe/36b8253fde66_qualityiq/stdout_c51b32fbb7a84c70838b07018f26b2d2 for reading in non-blocking mode.
+2026-08-02T10:19:09.9918046Z Successfully opened named pipe: /podr/container/pipe/36b8253fde66_qualityiq/stdout_c51b32fbb7a84c70838b07018f26b2d2.
+2026-08-02T10:19:09.9918794Z Successfully removed non-blocking flag from /podr/container/pipe/36b8253fde66_qualityiq/stdout_c51b32fbb7a84c70838b07018f26b2d2.
+2026-08-02T10:19:09.9920018Z Creating stderr named pipe at /podr/container/pipe/36b8253fde66_qualityiq/stderr_4055e3ae93e94af2a7bd7b7985f077a3.
+2026-08-02T10:19:09.9921268Z Successfully created stderr named pipe at: /podr/container/pipe/36b8253fde66_qualityiq/stderr_4055e3ae93e94af2a7bd7b7985f077a3.
+2026-08-02T10:19:10.0014728Z Opening named pipe /podr/container/pipe/36b8253fde66_qualityiq/stderr_4055e3ae93e94af2a7bd7b7985f077a3 for reading in non-blocking mode.
+2026-08-02T10:19:10.0017359Z Successfully opened named pipe: /podr/container/pipe/36b8253fde66_qualityiq/stderr_4055e3ae93e94af2a7bd7b7985f077a3.
+2026-08-02T10:19:10.0020207Z Successfully removed non-blocking flag from /podr/container/pipe/36b8253fde66_qualityiq/stderr_4055e3ae93e94af2a7bd7b7985f077a3.
+2026-08-02T10:19:10.0026931Z Creating container with image: appsvc/php:8.4-fpm_20260428.5.tuxprod from registry: 10.1.0.7:13209 and fully qualified image name: 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod
+2026-08-02T10:19:11.0978293Z Starting container: 36b8253fde66_qualityiq.
+2026-08-02T10:19:11.2353028Z Starting watchers and probes.
+2026-08-02T10:19:11.2356189Z Starting metrics collection.
+2026-08-02T10:19:11.2441606Z Container is running.
+2026-08-02T10:19:11.2452044Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:19:11.5159232Z Container start method finished after 2465 ms.
+2026-08-02T10:19:11.5161572Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:19:11.5161879Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:19:52.5909495Z Site startup probe succeeded after 41.0743973 seconds.
+2026-08-02T10:19:52.8350006Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site startup probe succeeded after 41.0743973 seconds., DetailsLevel: INFO
+2026-08-02T10:19:53.4058100Z Site is running with deployment version: 65e43aad-70a0-4838-98cf-c1f2b6a17edc
+2026-08-02T10:19:53.4103395Z Site started.
+2026-08-02T10:19:53.4117188Z State: Started, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site started at 08/02/2026 10:19:53 (UTC), DetailsLevel: INFO
+2026-08-02T10:19:53.4386677Z Site is running with patch version PHP-8.4.16
+2026-08-02T10:19:59.5496141Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:20:03.6456411Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:20:03.6473924Z Container start method called.
+2026-08-02T10:20:03.6481602Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:20:03.6539110Z Establishing network.
+2026-08-02T10:20:03.6545320Z Pulling image: appsvc/php:8.4-fpm_20260428.5.tuxprod.
+2026-08-02T10:20:04.7725247Z Container is starting.
+2026-08-02T10:20:04.7726575Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:20:04.8096171Z Establishing user namespace if not established already.
+2026-08-02T10:20:04.8097587Z Establishing network if not established already.
+2026-08-02T10:20:04.8099951Z Mounting volumes.
+2026-08-02T10:20:04.8101085Z Nested mountpoint 
+2026-08-02T10:20:04.8204106Z Nested mountpoint volatile/logs
+2026-08-02T10:20:04.8774058Z Nested mountpoint 
+2026-08-02T10:20:04.9788070Z Nested mountpoint 
+2026-08-02T10:20:05.3637676Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:20:05.4282043Z Creating container.
+2026-08-02T10:20:05.4284839Z Creating pipes for streaming container io.
+2026-08-02T10:20:05.4285550Z Creating stdout named pipe at /podr/container/pipe/0b661c87aa3c_qualityiq/stdout_97589ec1844a4f3b8a8400f45e8fc84b.
+2026-08-02T10:20:05.4287624Z Successfully created stdout named pipe at: /podr/container/pipe/0b661c87aa3c_qualityiq/stdout_97589ec1844a4f3b8a8400f45e8fc84b.
+2026-08-02T10:20:05.4288166Z Opening named pipe /podr/container/pipe/0b661c87aa3c_qualityiq/stdout_97589ec1844a4f3b8a8400f45e8fc84b for reading in non-blocking mode.
+2026-08-02T10:20:05.4288892Z Successfully opened named pipe: /podr/container/pipe/0b661c87aa3c_qualityiq/stdout_97589ec1844a4f3b8a8400f45e8fc84b.
+2026-08-02T10:20:05.4289428Z Successfully removed non-blocking flag from /podr/container/pipe/0b661c87aa3c_qualityiq/stdout_97589ec1844a4f3b8a8400f45e8fc84b.
+2026-08-02T10:20:05.4318624Z Creating stderr named pipe at /podr/container/pipe/0b661c87aa3c_qualityiq/stderr_04557cad986149d7a37523e5c929aeb7.
+2026-08-02T10:20:05.6369539Z Successfully created stderr named pipe at: /podr/container/pipe/0b661c87aa3c_qualityiq/stderr_04557cad986149d7a37523e5c929aeb7.
+2026-08-02T10:20:05.6475575Z Opening named pipe /podr/container/pipe/0b661c87aa3c_qualityiq/stderr_04557cad986149d7a37523e5c929aeb7 for reading in non-blocking mode.
+2026-08-02T10:20:05.6478144Z Successfully opened named pipe: /podr/container/pipe/0b661c87aa3c_qualityiq/stderr_04557cad986149d7a37523e5c929aeb7.
+2026-08-02T10:20:05.6482553Z Successfully removed non-blocking flag from /podr/container/pipe/0b661c87aa3c_qualityiq/stderr_04557cad986149d7a37523e5c929aeb7.
+2026-08-02T10:20:05.6866974Z Creating container with image: appsvc/php:8.4-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod
+2026-08-02T10:20:09.9613479Z Starting container: 0b661c87aa3c_qualityiq.
+2026-08-02T10:20:10.4789203Z Starting watchers and probes.
+2026-08-02T10:20:10.4794064Z Starting metrics collection.
+2026-08-02T10:20:10.4800082Z Container is running.
+2026-08-02T10:20:10.4814652Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:20:11.3765743Z Container start method finished after 7729 ms.
+2026-08-02T10:20:11.3768317Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:20:11.3768581Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:21:31.4504432Z Site startup probe succeeded after 80.0652602 seconds.
+2026-08-02T10:21:31.6767973Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 80.0652602 seconds., DetailsLevel: INFO
+2026-08-02T10:21:33.3078363Z Site is running with deployment version: 65e43aad-70a0-4838-98cf-c1f2b6a17edc
+2026-08-02T10:21:33.3104679Z Site started.
+2026-08-02T10:21:33.3193978Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/02/2026 10:21:33 (UTC), DetailsLevel: INFO
+2026-08-02T10:21:33.3197657Z Site is running with patch version PHP-8.4.16
+2026-08-02T10:21:53.6677338Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site started at 08/02/2026 10:19:53 (UTC), DetailsLevel: INFO
+2026-08-02T10:21:53.6684930Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site started at 08/02/2026 10:19:53 (UTC), DetailsLevel: INFO
+2026-08-02T10:21:53.6685794Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:21:53.7453058Z Stop and delete container. Retry count = 0
+2026-08-02T10:21:53.7456124Z Stopping container: 36b8253fde66_qualityiq.
+2026-08-02T10:21:58.8649245Z Deleting container: 36b8253fde66_qualityiq. Retry count = 0
+2026-08-02T10:21:59.2532734Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:21:59.2553144Z Container is terminated. Total time elapsed: 5584 ms.
+2026-08-02T10:21:59.2554728Z Site: qualityiq stopped.
+2026-08-02T10:22:24.5054625Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:22:29.7130372Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:22:29.7740973Z Container start method called.
+2026-08-02T10:22:29.7742723Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:22:29.7743501Z Establishing network.
+2026-08-02T10:22:29.8002709Z Pulling image: appsvc/php:8.4-fpm_20260428.5.tuxprod.
+2026-08-02T10:22:31.1590993Z Container is starting.
+2026-08-02T10:22:31.1738362Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:22:31.1740217Z Establishing user namespace if not established already.
+2026-08-02T10:22:31.1750037Z Establishing network if not established already.
+2026-08-02T10:22:31.1751724Z Mounting volumes.
+2026-08-02T10:22:31.1925374Z Nested mountpoint 
+2026-08-02T10:22:31.2219498Z Nested mountpoint volatile/logs
+2026-08-02T10:22:31.2995928Z Nested mountpoint 
+2026-08-02T10:22:31.3092376Z Nested mountpoint 
+2026-08-02T10:22:31.9336643Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:22:31.9338299Z Creating container.
+2026-08-02T10:22:31.9339211Z Creating pipes for streaming container io.
+2026-08-02T10:22:31.9340028Z Creating stdout named pipe at /podr/container/pipe/3134971ea016_qualityiq/stdout_c7ec7bf9ffaf4d70a27313df3792e67e.
+2026-08-02T10:22:31.9442682Z Successfully created stdout named pipe at: /podr/container/pipe/3134971ea016_qualityiq/stdout_c7ec7bf9ffaf4d70a27313df3792e67e.
+2026-08-02T10:22:31.9443339Z Opening named pipe /podr/container/pipe/3134971ea016_qualityiq/stdout_c7ec7bf9ffaf4d70a27313df3792e67e for reading in non-blocking mode.
+2026-08-02T10:22:31.9444150Z Successfully opened named pipe: /podr/container/pipe/3134971ea016_qualityiq/stdout_c7ec7bf9ffaf4d70a27313df3792e67e.
+2026-08-02T10:22:31.9444749Z Successfully removed non-blocking flag from /podr/container/pipe/3134971ea016_qualityiq/stdout_c7ec7bf9ffaf4d70a27313df3792e67e.
+2026-08-02T10:22:31.9445752Z Creating stderr named pipe at /podr/container/pipe/3134971ea016_qualityiq/stderr_9d0ac7e96b8040c6a3e3738dcd5c8d35.
+2026-08-02T10:22:31.9446764Z Successfully created stderr named pipe at: /podr/container/pipe/3134971ea016_qualityiq/stderr_9d0ac7e96b8040c6a3e3738dcd5c8d35.
+2026-08-02T10:22:31.9447274Z Opening named pipe /podr/container/pipe/3134971ea016_qualityiq/stderr_9d0ac7e96b8040c6a3e3738dcd5c8d35 for reading in non-blocking mode.
+2026-08-02T10:22:31.9447906Z Successfully opened named pipe: /podr/container/pipe/3134971ea016_qualityiq/stderr_9d0ac7e96b8040c6a3e3738dcd5c8d35.
+2026-08-02T10:22:31.9448442Z Successfully removed non-blocking flag from /podr/container/pipe/3134971ea016_qualityiq/stderr_9d0ac7e96b8040c6a3e3738dcd5c8d35.
+2026-08-02T10:22:31.9449136Z Creating container with image: appsvc/php:8.4-fpm_20260428.5.tuxprod from registry: 10.1.0.7:13209 and fully qualified image name: 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod
+2026-08-02T10:22:35.4272236Z Starting container: 3134971ea016_qualityiq.
+2026-08-02T10:22:35.6346817Z Starting watchers and probes.
+2026-08-02T10:22:35.7257350Z Starting metrics collection.
+2026-08-02T10:22:35.7258566Z Container is running.
+2026-08-02T10:22:35.7259581Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:22:35.9267782Z Container start method finished after 6145 ms.
+2026-08-02T10:22:35.9348052Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:22:35.9348990Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:23:26.0402348Z Site startup probe succeeded after 50.1047698 seconds.
+2026-08-02T10:23:26.3816110Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 50.1047698 seconds., DetailsLevel: INFO
+2026-08-02T10:23:26.9456445Z Site is running with deployment version: e7f5f8d5-bb49-4a02-bd27-15e32f1d1b73
+2026-08-02T10:23:26.9459521Z Site started.
+2026-08-02T10:23:26.9461377Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/02/2026 10:23:26 (UTC), DetailsLevel: INFO
+2026-08-02T10:23:26.9463379Z Site is running with patch version PHP-8.4.16
+2026-08-02T10:23:47.1693050Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site started at 08/02/2026 10:21:33 (UTC), DetailsLevel: INFO
+2026-08-02T10:23:47.1710851Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site started at 08/02/2026 10:21:33 (UTC), DetailsLevel: INFO
+2026-08-02T10:23:47.1717708Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:23:47.1893826Z Stop and delete container. Retry count = 0
+2026-08-02T10:23:47.1894618Z Stopping container: 0b661c87aa3c_qualityiq.
+2026-08-02T10:23:52.3104996Z Deleting container: 0b661c87aa3c_qualityiq. Retry count = 0
+2026-08-02T10:23:52.6761293Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:23:52.6781119Z Container is terminated. Total time elapsed: 5504 ms.
+2026-08-02T10:23:52.6782665Z Site: qualityiq stopped.
+2026-08-02T10:24:11.4221451Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:24:16.2075770Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:24:16.2077123Z Container start method called.
+2026-08-02T10:24:16.2077774Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:24:16.2078636Z Establishing network.
+2026-08-02T10:24:16.2079400Z Pulling image: appsvc/php:8.4-fpm_20260428.5.tuxprod.
+2026-08-02T10:24:17.3911267Z Container is starting.
+2026-08-02T10:24:17.3912312Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:24:17.3912934Z Establishing user namespace if not established already.
+2026-08-02T10:24:17.3913503Z Establishing network if not established already.
+2026-08-02T10:24:17.3914105Z Mounting volumes.
+2026-08-02T10:24:17.3915280Z Nested mountpoint 
+2026-08-02T10:24:17.4547862Z Nested mountpoint volatile/logs
+2026-08-02T10:24:17.6002878Z Nested mountpoint 
+2026-08-02T10:24:17.6095082Z Nested mountpoint 
+2026-08-02T10:24:17.9443050Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:24:17.9444457Z Creating container.
+2026-08-02T10:24:17.9445202Z Creating pipes for streaming container io.
+2026-08-02T10:24:17.9446483Z Creating stdout named pipe at /podr/container/pipe/047a81ea7401_qualityiq/stdout_6798a5b4fa214ce6a67011d5ee2f4262.
+2026-08-02T10:24:17.9540774Z Successfully created stdout named pipe at: /podr/container/pipe/047a81ea7401_qualityiq/stdout_6798a5b4fa214ce6a67011d5ee2f4262.
+2026-08-02T10:24:17.9542187Z Opening named pipe /podr/container/pipe/047a81ea7401_qualityiq/stdout_6798a5b4fa214ce6a67011d5ee2f4262 for reading in non-blocking mode.
+2026-08-02T10:24:17.9545191Z Successfully opened named pipe: /podr/container/pipe/047a81ea7401_qualityiq/stdout_6798a5b4fa214ce6a67011d5ee2f4262.
+2026-08-02T10:24:17.9545881Z Successfully removed non-blocking flag from /podr/container/pipe/047a81ea7401_qualityiq/stdout_6798a5b4fa214ce6a67011d5ee2f4262.
+2026-08-02T10:24:17.9547271Z Creating stderr named pipe at /podr/container/pipe/047a81ea7401_qualityiq/stderr_b255732c62ea43df97910c96e4b0669a.
+2026-08-02T10:24:17.9548689Z Successfully created stderr named pipe at: /podr/container/pipe/047a81ea7401_qualityiq/stderr_b255732c62ea43df97910c96e4b0669a.
+2026-08-02T10:24:17.9549214Z Opening named pipe /podr/container/pipe/047a81ea7401_qualityiq/stderr_b255732c62ea43df97910c96e4b0669a for reading in non-blocking mode.
+2026-08-02T10:24:17.9549983Z Successfully opened named pipe: /podr/container/pipe/047a81ea7401_qualityiq/stderr_b255732c62ea43df97910c96e4b0669a.
+2026-08-02T10:24:17.9550530Z Successfully removed non-blocking flag from /podr/container/pipe/047a81ea7401_qualityiq/stderr_b255732c62ea43df97910c96e4b0669a.
+2026-08-02T10:24:17.9551372Z Creating container with image: appsvc/php:8.4-fpm_20260428.5.tuxprod from registry: 10.1.0.7:13209 and fully qualified image name: 10.1.0.7:13209/appsvc/php:8.4-fpm_20260428.5.tuxprod
+2026-08-02T10:24:21.0214639Z Starting container: 047a81ea7401_qualityiq.
+2026-08-02T10:24:21.3566513Z Starting watchers and probes.
+2026-08-02T10:24:21.4477939Z Starting metrics collection.
+2026-08-02T10:24:21.4479868Z Container is running.
+2026-08-02T10:24:21.4492176Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:24:22.1448292Z Container start method finished after 5935 ms.
+2026-08-02T10:24:22.1514908Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:24:22.1515247Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:24:36.0339433Z Site startup probe failed after 13.8820296 seconds.
+2026-08-02T10:24:37.0763404Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:24:37.1339388Z Failed to start site. Revert by stopping site.
+2026-08-02T10:24:37.1344743Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:24:37.1351267Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:24:37.1352783Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:24:37.1807996Z Stop and delete container. Retry count = 0
+2026-08-02T10:24:37.1825343Z Stopping container: 047a81ea7401_qualityiq.
+2026-08-02T10:24:42.6489839Z Deleting container: 047a81ea7401_qualityiq. Retry count = 0
+2026-08-02T10:24:43.1594019Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:24:43.1596972Z Container is terminated. Total time elapsed: 6024 ms.
+2026-08-02T10:24:43.1597724Z Site container: qualityiq terminated during site startup.
+2026-08-02T10:24:43.1598783Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site container: qualityiq terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T10:24:43.1600929Z Site: qualityiq stopped.
+2026-08-02T10:25:04.4407239Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site started at 08/02/2026 10:23:26 (UTC), DetailsLevel: INFO
+2026-08-02T10:25:04.4419729Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:17:51, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site started at 08/02/2026 10:23:26 (UTC), DetailsLevel: INFO
+2026-08-02T10:25:04.4425766Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:25:04.4530086Z Stop and delete container. Retry count = 0
+2026-08-02T10:25:04.4531525Z Stopping container: 3134971ea016_qualityiq.
+2026-08-02T10:25:09.5843406Z Deleting container: 3134971ea016_qualityiq. Retry count = 0
+2026-08-02T10:25:09.8727704Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:25:09.8736839Z Container is terminated. Total time elapsed: 5430 ms.
+2026-08-02T10:25:09.8738311Z Site: qualityiq stopped.
+2026-08-02T10:27:21.7543332Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 10:24:43 (UTC), DetailsLevel: ERR
+2026-08-02T10:27:24.2987092Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 10:24:43 (UTC), DetailsLevel: ERR
+2026-08-02T10:27:24.2988196Z Container start method called.
+2026-08-02T10:27:24.2988723Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:27:24.2989334Z Establishing network.
+2026-08-02T10:27:24.2990204Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-02T10:27:25.6820671Z Image appsvc/php:8.2-fpm_20260428.5.tuxprod is pulled from registry 10.1.0.5:13209
+2026-08-02T10:27:25.6822144Z Container is starting.
+2026-08-02T10:27:25.6832898Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:27:25.6915010Z Establishing user namespace if not established already.
+2026-08-02T10:27:25.6923015Z Establishing network if not established already.
+2026-08-02T10:27:25.6924664Z Mounting volumes.
+2026-08-02T10:27:25.7203681Z Nested mountpoint 
+2026-08-02T10:27:25.7596138Z Nested mountpoint volatile/logs
+2026-08-02T10:27:25.7967233Z Nested mountpoint 
+2026-08-02T10:27:25.8141634Z Nested mountpoint 
+2026-08-02T10:27:26.0580825Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:27:26.0581993Z Creating container.
+2026-08-02T10:27:26.0583651Z Creating pipes for streaming container io.
+2026-08-02T10:27:26.0584416Z Creating stdout named pipe at /podr/container/pipe/072ad15686ed_qualityiq/stdout_54ee1ec6a38d4f62a0eaf2e0831f3d17.
+2026-08-02T10:27:26.0865307Z Successfully created stdout named pipe at: /podr/container/pipe/072ad15686ed_qualityiq/stdout_54ee1ec6a38d4f62a0eaf2e0831f3d17.
+2026-08-02T10:27:26.0866377Z Opening named pipe /podr/container/pipe/072ad15686ed_qualityiq/stdout_54ee1ec6a38d4f62a0eaf2e0831f3d17 for reading in non-blocking mode.
+2026-08-02T10:27:26.0867289Z Successfully opened named pipe: /podr/container/pipe/072ad15686ed_qualityiq/stdout_54ee1ec6a38d4f62a0eaf2e0831f3d17.
+2026-08-02T10:27:26.0868092Z Successfully removed non-blocking flag from /podr/container/pipe/072ad15686ed_qualityiq/stdout_54ee1ec6a38d4f62a0eaf2e0831f3d17.
+2026-08-02T10:27:26.1322536Z Creating stderr named pipe at /podr/container/pipe/072ad15686ed_qualityiq/stderr_d6618638f95f44c8b4cced2360732152.
+2026-08-02T10:27:26.1324856Z Successfully created stderr named pipe at: /podr/container/pipe/072ad15686ed_qualityiq/stderr_d6618638f95f44c8b4cced2360732152.
+2026-08-02T10:27:26.1326067Z Opening named pipe /podr/container/pipe/072ad15686ed_qualityiq/stderr_d6618638f95f44c8b4cced2360732152 for reading in non-blocking mode.
+2026-08-02T10:27:26.1332709Z Successfully opened named pipe: /podr/container/pipe/072ad15686ed_qualityiq/stderr_d6618638f95f44c8b4cced2360732152.
+2026-08-02T10:27:26.1334256Z Successfully removed non-blocking flag from /podr/container/pipe/072ad15686ed_qualityiq/stderr_d6618638f95f44c8b4cced2360732152.
+2026-08-02T10:27:26.1346233Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-02T10:27:27.0828201Z Starting container: 072ad15686ed_qualityiq.
+2026-08-02T10:27:27.2348248Z Starting watchers and probes.
+2026-08-02T10:27:27.2435317Z Starting metrics collection.
+2026-08-02T10:27:27.2516845Z Container is running.
+2026-08-02T10:27:27.2543820Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:27:27.3735993Z Container start method finished after 3074 ms.
+2026-08-02T10:27:27.3820757Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:27:27.3822320Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 10:24:37, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:31:17.4035998Z Site startup probe failed after 230.020985 seconds.
+2026-08-02T10:31:17.5743537Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:31:17.5912433Z Failed to start site. Revert by stopping site.
+2026-08-02T10:31:17.5920717Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:31:17.6009708Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-08-02T10:31:17.6014487Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:31:17.6442395Z Stop and delete container. Retry count = 0
+2026-08-02T10:31:17.6489052Z Stopping container: 072ad15686ed_qualityiq.
+2026-08-02T10:31:22.7359340Z Deleting container: 072ad15686ed_qualityiq. Retry count = 0
+2026-08-02T10:31:22.9852357Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:31:22.9864207Z Container is terminated. Total time elapsed: 5382 ms.
+2026-08-02T10:31:22.9868495Z Site container: qualityiq terminated during site startup.
+2026-08-02T10:31:22.9947572Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site container: qualityiq terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T10:31:23.0026982Z Site: qualityiq stopped.
+2026-08-02T10:32:58.7981218Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site stopped at 08/02/2026 10:31:23 (UTC), DetailsLevel: ERR
+2026-08-02T10:33:01.0853663Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site stopped at 08/02/2026 10:31:23 (UTC), DetailsLevel: ERR
+2026-08-02T10:33:01.0856821Z Container start method called.
+2026-08-02T10:33:01.0920380Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pulling image 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:33:01.0923967Z Establishing network.
+2026-08-02T10:33:01.1107126Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-02T10:33:01.7245902Z Container is starting.
+2026-08-02T10:33:01.7247412Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:33:01.7256740Z Establishing user namespace if not established already.
+2026-08-02T10:33:01.7257960Z Establishing network if not established already.
+2026-08-02T10:33:01.7259609Z Mounting volumes.
+2026-08-02T10:33:01.7267626Z Nested mountpoint 
+2026-08-02T10:33:01.7947136Z Nested mountpoint volatile/logs
+2026-08-02T10:33:01.8389513Z Nested mountpoint 
+2026-08-02T10:33:01.8711991Z Nested mountpoint 
+2026-08-02T10:33:02.1455469Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:33:02.1457923Z Creating container.
+2026-08-02T10:33:02.1459202Z Creating pipes for streaming container io.
+2026-08-02T10:33:02.1460414Z Creating stdout named pipe at /podr/container/pipe/b0138a2d674b_qualityiq/stdout_bbb85ca2c16b4b7f9262637b90cf5f11.
+2026-08-02T10:33:02.1560120Z Successfully created stdout named pipe at: /podr/container/pipe/b0138a2d674b_qualityiq/stdout_bbb85ca2c16b4b7f9262637b90cf5f11.
+2026-08-02T10:33:02.1561510Z Opening named pipe /podr/container/pipe/b0138a2d674b_qualityiq/stdout_bbb85ca2c16b4b7f9262637b90cf5f11 for reading in non-blocking mode.
+2026-08-02T10:33:02.1724906Z Successfully opened named pipe: /podr/container/pipe/b0138a2d674b_qualityiq/stdout_bbb85ca2c16b4b7f9262637b90cf5f11.
+2026-08-02T10:33:02.1733901Z Successfully removed non-blocking flag from /podr/container/pipe/b0138a2d674b_qualityiq/stdout_bbb85ca2c16b4b7f9262637b90cf5f11.
+2026-08-02T10:33:02.1736539Z Creating stderr named pipe at /podr/container/pipe/b0138a2d674b_qualityiq/stderr_359db1957ee04fb8a2463ef4d8d777e7.
+2026-08-02T10:33:02.1740042Z Successfully created stderr named pipe at: /podr/container/pipe/b0138a2d674b_qualityiq/stderr_359db1957ee04fb8a2463ef4d8d777e7.
+2026-08-02T10:33:02.1746268Z Opening named pipe /podr/container/pipe/b0138a2d674b_qualityiq/stderr_359db1957ee04fb8a2463ef4d8d777e7 for reading in non-blocking mode.
+2026-08-02T10:33:02.2102226Z Successfully opened named pipe: /podr/container/pipe/b0138a2d674b_qualityiq/stderr_359db1957ee04fb8a2463ef4d8d777e7.
+2026-08-02T10:33:02.2103301Z Successfully removed non-blocking flag from /podr/container/pipe/b0138a2d674b_qualityiq/stderr_359db1957ee04fb8a2463ef4d8d777e7.
+2026-08-02T10:33:02.2110099Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-02T10:33:04.5071802Z Starting container: b0138a2d674b_qualityiq.
+2026-08-02T10:33:04.6213803Z Starting watchers and probes.
+2026-08-02T10:33:04.6307753Z Starting metrics collection.
+2026-08-02T10:33:04.6372765Z Container is running.
+2026-08-02T10:33:04.6376452Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:33:04.9502719Z Container start method finished after 3864 ms.
+2026-08-02T10:33:04.9504212Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:33:04.9504500Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:33:35.9940177Z Site startup probe succeeded after 31.0432197 seconds.
+2026-08-02T10:33:36.2733103Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site startup probe succeeded after 31.0432197 seconds., DetailsLevel: INFO
+2026-08-02T10:33:36.7131941Z Site is running with deployment version: 1769cf11-0b66-4eaa-ba6f-0f864c69a521
+2026-08-02T10:33:36.7138437Z Site started.
+2026-08-02T10:33:36.7145844Z State: Started, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:33:36 (UTC), DetailsLevel: INFO
+2026-08-02T10:33:36.7588946Z Site is running with patch version PHP-8.2.30
+2026-08-02T10:43:38.2848094Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:43:41.9724314Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:43:41.9725543Z Container start method called.
+2026-08-02T10:43:41.9726316Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:43:41.9727112Z Establishing network.
+2026-08-02T10:43:41.9727974Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-02T10:43:44.1591887Z Container is starting.
+2026-08-02T10:43:44.1593764Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:43:44.1595279Z Establishing user namespace if not established already.
+2026-08-02T10:43:44.1596257Z Establishing network if not established already.
+2026-08-02T10:43:44.1597617Z Mounting volumes.
+2026-08-02T10:43:44.1598814Z Nested mountpoint 
+2026-08-02T10:43:44.1956649Z Nested mountpoint volatile/logs
+2026-08-02T10:43:44.3086629Z Nested mountpoint 
+2026-08-02T10:43:44.3819294Z Nested mountpoint 
+2026-08-02T10:43:44.8023615Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:43:44.8024508Z Creating container.
+2026-08-02T10:43:44.8025250Z Creating pipes for streaming container io.
+2026-08-02T10:43:44.8025901Z Creating stdout named pipe at /podr/container/pipe/0aeb4a0f33c7_qualityiq/stdout_50faa286a6364488b7c14352b22c0465.
+2026-08-02T10:43:44.8027586Z Successfully created stdout named pipe at: /podr/container/pipe/0aeb4a0f33c7_qualityiq/stdout_50faa286a6364488b7c14352b22c0465.
+2026-08-02T10:43:44.8174746Z Opening named pipe /podr/container/pipe/0aeb4a0f33c7_qualityiq/stdout_50faa286a6364488b7c14352b22c0465 for reading in non-blocking mode.
+2026-08-02T10:43:44.8200430Z Successfully opened named pipe: /podr/container/pipe/0aeb4a0f33c7_qualityiq/stdout_50faa286a6364488b7c14352b22c0465.
+2026-08-02T10:43:44.8201949Z Successfully removed non-blocking flag from /podr/container/pipe/0aeb4a0f33c7_qualityiq/stdout_50faa286a6364488b7c14352b22c0465.
+2026-08-02T10:43:44.8387023Z Creating stderr named pipe at /podr/container/pipe/0aeb4a0f33c7_qualityiq/stderr_0a1e8f38d221483288acc876f6c9fc24.
+2026-08-02T10:43:44.8546857Z Successfully created stderr named pipe at: /podr/container/pipe/0aeb4a0f33c7_qualityiq/stderr_0a1e8f38d221483288acc876f6c9fc24.
+2026-08-02T10:43:44.8549501Z Opening named pipe /podr/container/pipe/0aeb4a0f33c7_qualityiq/stderr_0a1e8f38d221483288acc876f6c9fc24 for reading in non-blocking mode.
+2026-08-02T10:43:44.8550750Z Successfully opened named pipe: /podr/container/pipe/0aeb4a0f33c7_qualityiq/stderr_0a1e8f38d221483288acc876f6c9fc24.
+2026-08-02T10:43:44.8551481Z Successfully removed non-blocking flag from /podr/container/pipe/0aeb4a0f33c7_qualityiq/stderr_0a1e8f38d221483288acc876f6c9fc24.
+2026-08-02T10:43:44.8564872Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-02T10:43:47.0137291Z Starting container: 0aeb4a0f33c7_qualityiq.
+2026-08-02T10:43:47.4005445Z Starting watchers and probes.
+2026-08-02T10:43:47.4008012Z Starting metrics collection.
+2026-08-02T10:43:47.4009005Z Container is running.
+2026-08-02T10:43:47.4009695Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:43:48.0590200Z Container start method finished after 6086 ms.
+2026-08-02T10:43:48.0593858Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:43:48.0594243Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:44:48.1942560Z Site startup probe succeeded after 60.1150048 seconds.
+2026-08-02T10:44:48.6451977Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 60.1150048 seconds., DetailsLevel: INFO
+2026-08-02T10:44:49.3178256Z Site is running with deployment version: 1769cf11-0b66-4eaa-ba6f-0f864c69a521
+2026-08-02T10:44:49.3180692Z Site started.
+2026-08-02T10:44:49.3256135Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/02/2026 10:44:49 (UTC), DetailsLevel: INFO
+2026-08-02T10:44:49.3369256Z Site is running with patch version PHP-8.2.30
+2026-08-02T10:45:09.6072029Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:33:36 (UTC), DetailsLevel: INFO
+2026-08-02T10:45:09.6253436Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:33:36 (UTC), DetailsLevel: INFO
+2026-08-02T10:45:09.6273613Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:45:09.7539628Z Stop and delete container. Retry count = 0
+2026-08-02T10:45:09.7626916Z Stopping container: b0138a2d674b_qualityiq.
+2026-08-02T10:45:15.0687898Z Deleting container: b0138a2d674b_qualityiq. Retry count = 0
+2026-08-02T10:45:16.2629110Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:45:16.2741658Z Container is terminated. Total time elapsed: 6644 ms.
+2026-08-02T10:45:16.2755352Z Site: qualityiq stopped.
+2026-08-02T10:51:22.9293848Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:51:25.9885990Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:51:25.9959453Z Container start method called.
+2026-08-02T10:51:26.0068496Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:51:26.0071538Z Establishing network.
+2026-08-02T10:51:26.0072661Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-02T10:51:26.5333777Z Container is starting.
+2026-08-02T10:51:26.5341023Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:51:26.5342955Z Establishing user namespace if not established already.
+2026-08-02T10:51:26.5344864Z Establishing network if not established already.
+2026-08-02T10:51:26.5416179Z Mounting volumes.
+2026-08-02T10:51:26.5502226Z Nested mountpoint 
+2026-08-02T10:51:26.6366327Z Nested mountpoint volatile/logs
+2026-08-02T10:51:26.6536245Z Nested mountpoint 
+2026-08-02T10:51:26.6935645Z Nested mountpoint 
+2026-08-02T10:51:26.8762259Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:51:26.8764526Z Creating container.
+2026-08-02T10:51:26.8765255Z Creating pipes for streaming container io.
+2026-08-02T10:51:26.8766043Z Creating stdout named pipe at /podr/container/pipe/4d8c48bd6c65_qualityiq/stdout_d6716e0a2b2043d58afaea33d1030638.
+2026-08-02T10:51:26.9054425Z Successfully created stdout named pipe at: /podr/container/pipe/4d8c48bd6c65_qualityiq/stdout_d6716e0a2b2043d58afaea33d1030638.
+2026-08-02T10:51:26.9055286Z Opening named pipe /podr/container/pipe/4d8c48bd6c65_qualityiq/stdout_d6716e0a2b2043d58afaea33d1030638 for reading in non-blocking mode.
+2026-08-02T10:51:26.9256847Z Successfully opened named pipe: /podr/container/pipe/4d8c48bd6c65_qualityiq/stdout_d6716e0a2b2043d58afaea33d1030638.
+2026-08-02T10:51:26.9272316Z Successfully removed non-blocking flag from /podr/container/pipe/4d8c48bd6c65_qualityiq/stdout_d6716e0a2b2043d58afaea33d1030638.
+2026-08-02T10:51:27.0192689Z Creating stderr named pipe at /podr/container/pipe/4d8c48bd6c65_qualityiq/stderr_e1f55d573323443d8027650c9b76f87b.
+2026-08-02T10:51:27.0195788Z Successfully created stderr named pipe at: /podr/container/pipe/4d8c48bd6c65_qualityiq/stderr_e1f55d573323443d8027650c9b76f87b.
+2026-08-02T10:51:27.0197519Z Opening named pipe /podr/container/pipe/4d8c48bd6c65_qualityiq/stderr_e1f55d573323443d8027650c9b76f87b for reading in non-blocking mode.
+2026-08-02T10:51:27.0279072Z Successfully opened named pipe: /podr/container/pipe/4d8c48bd6c65_qualityiq/stderr_e1f55d573323443d8027650c9b76f87b.
+2026-08-02T10:51:27.0280397Z Successfully removed non-blocking flag from /podr/container/pipe/4d8c48bd6c65_qualityiq/stderr_e1f55d573323443d8027650c9b76f87b.
+2026-08-02T10:51:27.0284533Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.7:13209 and fully qualified image name: 10.1.0.7:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-02T10:51:28.3439282Z Starting container: 4d8c48bd6c65_qualityiq.
+2026-08-02T10:51:28.4629347Z Starting watchers and probes.
+2026-08-02T10:51:28.4655131Z Starting metrics collection.
+2026-08-02T10:51:28.4726643Z Container is running.
+2026-08-02T10:51:28.4738421Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:51:28.6329384Z Container start method finished after 2629 ms.
+2026-08-02T10:51:28.6334008Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:51:28.6334343Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:51:59.8349054Z Site startup probe succeeded after 31.0759019 seconds.
+2026-08-02T10:52:00.1428206Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 31.0759019 seconds., DetailsLevel: INFO
+2026-08-02T10:52:00.8033663Z Site is running with deployment version: e07bcdd7-596c-43a5-a705-7ad0e0ba30c2
+2026-08-02T10:52:00.8036626Z Site started.
+2026-08-02T10:52:00.8039877Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/02/2026 10:52:00 (UTC), DetailsLevel: INFO
+2026-08-02T10:52:00.8124497Z Site is running with patch version PHP-8.2.30
+2026-08-02T10:52:21.1212576Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:44:49 (UTC), DetailsLevel: INFO
+2026-08-02T10:52:21.1382950Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:44:49 (UTC), DetailsLevel: INFO
+2026-08-02T10:52:21.1640579Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:52:21.3180231Z Stop and delete container. Retry count = 0
+2026-08-02T10:52:21.3305170Z Stopping container: 0aeb4a0f33c7_qualityiq.
+2026-08-02T10:52:26.5575346Z Deleting container: 0aeb4a0f33c7_qualityiq. Retry count = 0
+2026-08-02T10:52:26.9504304Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:52:26.9583366Z Container is terminated. Total time elapsed: 5793 ms.
+2026-08-02T10:52:26.9593074Z Site: qualityiq stopped.
+2026-08-02T10:52:44.5878260Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T10:52:44.8092004Z State: Stopping, Action: CancellingStartup, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped manually or container terminated, DetailsLevel: WARN
+2026-08-02T10:52:44.8369329Z State: Stopping, Action: StoppingSite, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped manually or container terminated, DetailsLevel: WARN
+2026-08-02T10:52:44.8372637Z State: Stopping, Action: StoppingSiteContainers, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped manually or container terminated, DetailsLevel: WARN
+2026-08-02T10:52:44.8372845Z Site: qualityiq stopped.
+2026-08-02T10:53:05.7507646Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:52:00 (UTC), DetailsLevel: INFO
+2026-08-02T10:53:05.7510903Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 08/02/2026 10:31:17, LastErrorDetails: Container did not respond to startup probe on port 8080 within the expected time limit of 230s. Port mismatch detected: the container is listening on port 80, 9000 but the platform is probing port 8080. Set the WEBSITES_PORT app setting to match the port your application listens on. If your application needs more time to start, increase WEBSITES_CONTAINER_START_TIME_LIMIT. Please inspect your container logs for more details as this could indicate an issue with your application., Details: Site started at 08/02/2026 10:52:00 (UTC), DetailsLevel: INFO
+2026-08-02T10:53:05.7512125Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T10:53:05.7700831Z Stop and delete container. Retry count = 0
+2026-08-02T10:53:05.7701880Z Stopping container: 4d8c48bd6c65_qualityiq.
+2026-08-02T10:53:10.9067901Z Deleting container: 4d8c48bd6c65_qualityiq. Retry count = 0
+2026-08-02T10:53:11.2115836Z Container spec TerminationMessagePolicy  path 
+2026-08-02T10:53:11.2126907Z Container is terminated. Total time elapsed: 5461 ms.
+2026-08-02T10:53:11.2139479Z Site: qualityiq stopped.
+2026-08-02T10:53:32.2296469Z State: Starting, Action: EstablishingSiteNetworks, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped at 08/02/2026 10:52:45 (UTC), DetailsLevel: WARN
+2026-08-02T10:53:33.8182543Z State: Starting, Action: StartingSiteContainers, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped at 08/02/2026 10:52:45 (UTC), DetailsLevel: WARN
+2026-08-02T10:53:33.8183523Z Container start method called.
+2026-08-02T10:53:33.8184625Z State: Starting, Action: PullingImage, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Pulling image 10.1.0.7:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for qualityiq., DetailsLevel: INFO
+2026-08-02T10:53:33.8185353Z Establishing network.
+2026-08-02T10:53:33.8202150Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-02T10:53:34.1423786Z Container is starting.
+2026-08-02T10:53:34.1425662Z State: Starting, Action: MountingVolumes, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Mounting volumes for qualityiq., DetailsLevel: INFO
+2026-08-02T10:53:34.1426404Z Establishing user namespace if not established already.
+2026-08-02T10:53:34.1426987Z Establishing network if not established already.
+2026-08-02T10:53:34.1427808Z Mounting volumes.
+2026-08-02T10:53:34.1439697Z Nested mountpoint 
+2026-08-02T10:53:34.1536125Z Nested mountpoint volatile/logs
+2026-08-02T10:53:34.1735427Z Nested mountpoint 
+2026-08-02T10:53:34.1910501Z Nested mountpoint 
+2026-08-02T10:53:34.2092063Z State: Starting, Action: CreatingContainer, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Finished pulling container image and mounting volumes for qualityiq. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T10:53:34.2093286Z Creating container.
+2026-08-02T10:53:34.2094238Z Creating pipes for streaming container io.
+2026-08-02T10:53:34.2095235Z Creating stdout named pipe at /podr/container/pipe/99df71a81eb7_qualityiq/stdout_a9feebb9beb641bea52d031d800f49b8.
+2026-08-02T10:53:34.2099002Z Successfully created stdout named pipe at: /podr/container/pipe/99df71a81eb7_qualityiq/stdout_a9feebb9beb641bea52d031d800f49b8.
+2026-08-02T10:53:34.2099698Z Opening named pipe /podr/container/pipe/99df71a81eb7_qualityiq/stdout_a9feebb9beb641bea52d031d800f49b8 for reading in non-blocking mode.
+2026-08-02T10:53:34.2100454Z Successfully opened named pipe: /podr/container/pipe/99df71a81eb7_qualityiq/stdout_a9feebb9beb641bea52d031d800f49b8.
+2026-08-02T10:53:34.2100988Z Successfully removed non-blocking flag from /podr/container/pipe/99df71a81eb7_qualityiq/stdout_a9feebb9beb641bea52d031d800f49b8.
+2026-08-02T10:53:34.2167759Z Creating stderr named pipe at /podr/container/pipe/99df71a81eb7_qualityiq/stderr_c5fc446931ac4063bd53b1dec41945ec.
+2026-08-02T10:53:34.2169076Z Successfully created stderr named pipe at: /podr/container/pipe/99df71a81eb7_qualityiq/stderr_c5fc446931ac4063bd53b1dec41945ec.
+2026-08-02T10:53:34.2169722Z Opening named pipe /podr/container/pipe/99df71a81eb7_qualityiq/stderr_c5fc446931ac4063bd53b1dec41945ec for reading in non-blocking mode.
+2026-08-02T10:53:34.2170493Z Successfully opened named pipe: /podr/container/pipe/99df71a81eb7_qualityiq/stderr_c5fc446931ac4063bd53b1dec41945ec.
+2026-08-02T10:53:34.2174136Z Successfully removed non-blocking flag from /podr/container/pipe/99df71a81eb7_qualityiq/stderr_c5fc446931ac4063bd53b1dec41945ec.
+2026-08-02T10:53:34.2175437Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.7:13209 and fully qualified image name: 10.1.0.7:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-02T10:53:34.8915863Z Starting container: 99df71a81eb7_qualityiq.
+2026-08-02T10:53:35.0059311Z Starting watchers and probes.
+2026-08-02T10:53:35.0064972Z Starting metrics collection.
+2026-08-02T10:53:35.0125216Z Container is running.
+2026-08-02T10:53:35.0127727Z State: Starting, Action: CreatingContainer, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:53:35.1374006Z Container start method finished after 1318 ms.
+2026-08-02T10:53:35.1375413Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Container qualityiq successfully created and is running., DetailsLevel: INFO
+2026-08-02T10:53:35.1375761Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T10:54:04.3180381Z Site startup probe succeeded after 29.1399975 seconds.
+2026-08-02T10:54:04.9130137Z State: Starting, Action: WarmUpProbeSucceeded, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Site startup probe succeeded after 29.1399975 seconds., DetailsLevel: INFO
+2026-08-02T10:54:06.1196102Z Site is running with deployment version: e07bcdd7-596c-43a5-a705-7ad0e0ba30c2
+2026-08-02T10:54:06.1199443Z Site started.
+2026-08-02T10:54:06.1207765Z State: Started, Action: None, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/02/2026 10:52:44, LastErrorDetails: Site stopped manually or container terminated, Details: Site started at 08/02/2026 10:54:06 (UTC), DetailsLevel: INFO
+2026-08-02T10:54:06.1588209Z Site is running with patch version PHP-8.2.30

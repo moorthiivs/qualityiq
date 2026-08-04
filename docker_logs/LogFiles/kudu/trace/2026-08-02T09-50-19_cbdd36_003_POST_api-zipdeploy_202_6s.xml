@@ -1,0 +1,18 @@
+<step title="Incoming Request" date="2026-08-02T09:50:19.944" instance="cbdd36" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="834,1,17" Accept="*/*" Host="qualityiq-bnhwhpf4fnd8a5bu.scm.centralindia-01.azurewebsites.net" User-Agent="AZURECLI/2.74.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Cookie="ARRAffinity=cbdd362fa4ef45d234c6d90da32d24ba071c218e677864a8ea9a8caf7da74954; ARRAffinitySameSite=cbdd362fa4ef45d234c6d90da32d24ba071c218e677864a8ea9a8caf7da74954" Content-Length="28578937" x-ms-client-request-id="8b0230f3-8e57-11f1-8618-342eb79b3e5c" x-ms-artifact-checksum="22cfd85fca7c31394b761022ae5e7df110fb3f03de3496ec1dd32f806fdf41ed" X-ARR-LOG-ID="8b0230f3-8e57-11f1-8618-342eb79b3e5c" CLIENT-IP="120.60.60.3:53029" X-SITE-DEPLOYMENT-ID="QualityIQ" WAS-DEFAULT-HOSTNAME="qualityiq-bnhwhpf4fnd8a5bu.scm.centralindia-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" X-Client-IP="120.60.60.3" X-Client-Port="53029" >
+  <step title="ZipPushDeploy" date="2026-08-02T09:50:20.099" >
+    <step title="ZipDeploy. Extract zip." date="2026-08-02T09:50:20.119" /><!-- duration: 18ms -->
+    <step title="None repository commit" date="2026-08-02T09:50:20.198" >
+      <step title="Commit id: 2063ac1e-68a7-44df-ba0c-2287ec164e4f" date="2026-08-02T09:50:20.201" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 6ms -->
+    </step><!-- duration: 11ms -->
+    <step title="Starting PushDeployAsync" date="2026-08-02T09:50:20.212" /><!-- duration: 3ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/4d13f7f7-4c2c-427a-a7ff-3a3fb005fe16.zip" date="2026-08-02T09:50:20.237" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/4d13f7f7-4c2c-427a-a7ff-3a3fb005fe16.zip" date="2026-08-02T09:50:20.244" /><!-- duration: 3ms -->
+      <step title="Writing zip file to /tmp/zipdeploy/4d13f7f7-4c2c-427a-a7ff-3a3fb005fe16.zip" date="2026-08-02T09:50:20.265" /><!-- duration: 5178ms -->
+    </step><!-- duration: 5673ms -->
+    <step title="Start deployment in the background" date="2026-08-02T09:50:25.950" >
+      <step title="Acquiring Deployment Lock" date="2026-08-02T09:50:26.084" /><!-- duration: 17ms -->
+      <step title="Acquired Deployment Lock" date="2026-08-02T09:50:26.146" /><!-- duration: 2ms -->
+    </step><!-- duration: 297ms -->
+  </step><!-- duration: 6158ms -->
+  <step title="Outgoing response" date="2026-08-02T09:50:26.274" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 10ms -->
+</step><!-- duration: 6354ms -->

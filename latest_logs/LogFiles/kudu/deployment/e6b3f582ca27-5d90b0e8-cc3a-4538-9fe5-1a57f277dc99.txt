@@ -1,0 +1,27 @@
+2026-08-02T10:44:27  Fetching changes.
+2026-08-02T10:44:28    Starting  LocalZipHandler
+2026-08-02T10:44:28    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/57eeab3c-78aa-43a8-b107-f65d742b2458.zip (27.27 MB) to /tmp/zipdeploy/extracted
+2026-08-02T10:45:13  Updating submodules.
+2026-08-02T10:45:13  Preparing deployment for commit id 'a450f569-3'.
+2026-08-02T10:45:13  PreDeployment: context.CleanOutputPath False
+2026-08-02T10:45:14  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-08-02T10:45:14  Running build. Project type: OneDeploy
+2026-08-02T10:45:14  Copying the manifest
+2026-08-02T10:45:14  Running deployment command...
+2026-08-02T10:45:14    Command: /opt/Kudu/Scripts/parallel_rsync.sh /tmp/zipdeploy/extracted /home/site/wwwroot 8 /tmp/ False False  
+2026-08-02T10:45:15    Run rsync from: /tmp/zipdeploy/extracted/ to: /home/site/wwwroot/ in 8 parallel threads
+2026-08-02T10:45:15    Delete options: clean=False, use manifest=False, directory to ignore=
+2026-08-02T10:45:15    Prev manifest = /home/site/deployments/1769cf11-0b66-4eaa-ba6f-0f864c69a521/manifest and next /home/site/deployments/a450f569-3450-40ca-8f71-9d58f4451455/manifest
+2026-08-02T10:45:15    Cleaning up /tmp//filelist.txt and /tmp//splits
+2026-08-02T10:45:15    Creating a list of all files at /tmp//filelist.txt
+2026-08-02T10:45:15    No directory to exclude.
+2026-08-02T10:45:16    Created /tmp//filelist.txt. Total number of files to be synced = 9226.
+2026-08-02T10:45:16    Created batches from the list of files. Processing 1154 files in each thread
+2026-08-02T10:45:17    Running rsync for filelist /tmp//splits/split.aa from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/
+2026-08-02T10:45:17    Running rsync for filelist /tmp//splits/split.ac from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/
+2026-08-02T10:45:18    Running rsync for filelist /tmp//splits/split.ad from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/
+2026-08-02T10:45:18    Running rsync for filelist /tmp//splits/split.ab from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/
+2026-08-02T10:45:18    Running rsync for filelist /tmp//splits/split.ae from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/
+2026-08-02T10:45:19    Running rsync for filelist /tmp//splits/split.af from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/
+2026-08-02T10:45:19    Running rsync for filelist /tmp//splits/split.ag from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/
+2026-08-02T10:45:19    Running rsync for filelist /tmp//splits/split.ah from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/

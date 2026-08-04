@@ -1,0 +1,143 @@
+2026-08-02T10:48:56.4267524Z,Updating submodules.,f9663a4e-a59f-42f4-84be-feb18d346cd5,0
+2026-08-02T10:48:57.5256027Z,Preparing deployment for commit id 'e07bcdd7-5'.,8e1badc2-3e4d-4c19-b092-e573ea159540,0
+2026-08-02T10:48:57.8502829Z,PreDeployment: context.CleanOutputPath False,1b0d0b93-cec1-4db7-b593-bfde44297e93,0
+2026-08-02T10:48:57.9709403Z,PreDeployment: context.OutputPath /home/site/wwwroot,7711c907-44e0-4fbd-af30-c47c322b885d,0
+2026-08-02T10:48:58.0952109Z,Repository path is /tmp/zipdeploy/extracted,24905336-6575-4507-abe7-30401f1a537f,0
+2026-08-02T10:48:58.2363039Z,Running oryx build...,cd7a9704-1238-45c5-a208-2619e8e50475,0
+	2026-08-02T10:48:58.2552103Z,Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform php --platform-version 8.2 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8def083a79f3edd | tee /tmp/oryx-build.log,,0
+	2026-08-02T10:49:00.1133024Z,Operation performed by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2026-08-02T10:49:00.1548678Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2026-08-02T10:49:00.2171694Z,,,0
+	2026-08-02T10:49:00.3032339Z,Oryx Version: 0.2.20260513.1+5c94136d0d5c06204a00d688dc7aea902452e52c&comma; Commit: 5c94136d0d5c06204a00d688dc7aea902452e52c&comma; ReleaseTagName: 20260513.1,,0
+	2026-08-02T10:49:00.3226226Z,,,0
+	2026-08-02T10:49:00.3425361Z,Build Operation ID: ecb2dd229e424f79,,0
+	2026-08-02T10:49:00.3618380Z,Repository Commit : e07bcdd7-596c-43a5-a705-7ad0e0ba30c2,,0
+	2026-08-02T10:49:00.3809604Z,OS Type           : bullseye,,0
+	2026-08-02T10:49:00.4010310Z,Image Type        : githubactions,,0
+	2026-08-02T10:49:00.4296879Z,,,0
+	2026-08-02T10:49:00.4484536Z,Primary SDK Storage URL: https://oryx-cdn.microsoft.io,,0
+	2026-08-02T10:49:00.4737220Z,Backup SDK Storage URL: ,,0
+	2026-08-02T10:49:00.4927661Z,ACR SDK Registry URL: (not set),,0
+	2026-08-02T10:49:00.5406160Z,SDK provider status:,,0
+	2026-08-02T10:49:00.5880504Z,  External ACR SDK provider: Enabled,,0
+	2026-08-02T10:49:00.6082345Z,  External SDK provider: Enabled,,0
+	2026-08-02T10:49:00.6480766Z,  Direct ACR SDK provider: Disabled,,0
+	2026-08-02T10:49:00.6686714Z,  Blob SDK provider: Enabled,,0
+	2026-08-02T10:49:00.7071949Z,External ACR SDK provider is enabled. Only using user-specified platform: php,,0
+	2026-08-02T10:49:00.7248387Z,Detecting platforms...,,0
+	2026-08-02T10:49:02.4723471Z,External ACR provider resolved version '8.2.30' for php.,,0
+	2026-08-02T10:49:02.5153057Z,Version resolved using external ACR SDK provider.,,0
+	2026-08-02T10:49:02.9217199Z,Version resolved using external ACR SDK provider.,,0
+	2026-08-02T10:49:02.9694269Z,Detected following platforms:,,0
+	2026-08-02T10:49:02.9979514Z,  php: 8.2.30,,0
+	2026-08-02T10:49:03.8388061Z,,,0
+	2026-08-02T10:49:03.9776204Z,Using intermediate directory '/tmp/8def083a79f3edd'.,,0
+	2026-08-02T10:49:04.0172044Z,,,0
+	2026-08-02T10:49:04.0533373Z,Copying files to the intermediate directory...,,0
+	2026-08-02T10:49:16.8305080Z,Copying files to intermediate directory done in 13 sec(s).,,0
+	2026-08-02T10:49:16.8988639Z,,,0
+	2026-08-02T10:49:16.9289413Z,Source directory     : /tmp/8def083a79f3edd,,0
+	2026-08-02T10:49:16.9779581Z,Destination directory: /home/site/wwwroot,,0
+	2026-08-02T10:49:17.0041996Z,,,0
+	2026-08-02T10:49:17.5628280Z,Running build script snippets...,,0
+	2026-08-02T10:49:17.5934657Z,PHP executable: /tmp/oryx/platforms/php/8.2.30/bin/php,,0
+	2026-08-02T10:49:17.6221288Z,Composer archive: /tmp/oryx/platforms/php-composer/2.6.2/composer.phar,,0
+	2026-08-02T10:49:17.6407638Z,Running 'composer install --ignore-platform-reqs --no-interaction'...,,0
+	2026-08-02T10:49:17.6586126Z,,,0
+	2026-08-02T10:49:19.8378539Z,Installing dependencies from lock file (including require-dev),,1
+	2026-08-02T10:49:20.0091857Z,Verifying lock file contents can be installed on current platform.,,1
+	2026-08-02T10:49:20.0922380Z,Package operations: 38 installs&comma; 0 updates&comma; 0 removals,,1
+	2026-08-02T10:49:20.2881686Z,    0 [>---------------------------]    0 [->--------------------------],,1
+	2026-08-02T10:49:20.3246320Z,  - Installing fakerphp/faker (v1.23.0): Extracting archive,,1
+	2026-08-02T10:49:20.3860831Z,  - Installing laravel/breeze (v1.25.0): Extracting archive,,1
+	2026-08-02T10:49:20.4250627Z,  - Installing laravel/pint (v1.13.3): Extracting archive,,1
+	2026-08-02T10:49:20.4775803Z,  - Installing symfony/yaml (v6.3.3): Extracting archive,,1
+	2026-08-02T10:49:20.5834248Z,  - Installing laravel/sail (v1.25.0): Extracting archive,,1
+	2026-08-02T10:49:20.6618855Z,  - Installing hamcrest/hamcrest-php (v2.0.1): Extracting archive,,1
+	2026-08-02T10:49:20.7356796Z,  - Installing mockery/mockery (1.6.6): Extracting archive,,1
+	2026-08-02T10:49:20.8590307Z,  - Installing filp/whoops (2.15.3): Extracting archive,,1
+	2026-08-02T10:49:21.0297479Z,  - Installing nunomaduro/collision (v7.10.0): Extracting archive,,1
+	2026-08-02T10:49:21.1751893Z,  - Installing sebastian/version (4.0.1): Extracting archive,,1
+	2026-08-02T10:49:21.3465978Z,  - Installing sebastian/type (4.0.0): Extracting archive,,1
+	2026-08-02T10:49:21.4914827Z,  - Installing sebastian/recursion-context (5.0.0): Extracting archive,,1
+	2026-08-02T10:49:21.5477674Z,  - Installing sebastian/object-reflector (3.0.0): Extracting archive,,1
+	2026-08-02T10:49:21.6623017Z,  - Installing sebastian/object-enumerator (5.0.0): Extracting archive,,1
+	2026-08-02T10:49:21.7541809Z,  - Installing sebastian/global-state (6.0.1): Extracting archive,,1
+	2026-08-02T10:49:21.7934964Z,  - Installing sebastian/exporter (5.1.1): Extracting archive,,1
+	2026-08-02T10:49:21.8542374Z,  - Installing sebastian/environment (6.0.1): Extracting archive,,1
+	2026-08-02T10:49:21.9583067Z,  - Installing sebastian/diff (5.0.3): Extracting archive,,1
+	2026-08-02T10:49:22.0184772Z,  - Installing sebastian/comparator (5.0.1): Extracting archive,,1
+	2026-08-02T10:49:22.0776277Z,  - Installing sebastian/code-unit (2.0.0): Extracting archive,,1
+	2026-08-02T10:49:22.1254016Z,  - Installing sebastian/cli-parser (2.0.0): Extracting archive,,1
+	2026-08-02T10:49:22.1988629Z,  - Installing phpunit/php-timer (6.0.0): Extracting archive,,1
+	2026-08-02T10:49:22.2665599Z,  - Installing phpunit/php-text-template (3.0.1): Extracting archive,,1
+	2026-08-02T10:49:22.7227086Z,  - Installing phpunit/php-invoker (4.0.0): Extracting archive,,1
+	2026-08-02T10:49:22.7534285Z,  - Installing phpunit/php-file-iterator (4.1.0): Extracting archive,,1
+	2026-08-02T10:49:22.7818122Z,  - Installing theseer/tokenizer (1.2.1): Extracting archive,,1
+	2026-08-02T10:49:22.8186937Z,  - Installing sebastian/lines-of-code (2.0.1): Extracting archive,,1
+	2026-08-02T10:49:22.8606091Z,  - Installing sebastian/complexity (3.1.0): Extracting archive,,1
+	2026-08-02T10:49:22.8846763Z,  - Installing sebastian/code-unit-reverse-lookup (3.0.0): Extracting archive,,1
+	2026-08-02T10:49:22.9254693Z,  - Installing phpunit/php-code-coverage (10.1.7): Extracting archive,,1
+	2026-08-02T10:49:22.9907616Z,  - Installing phar-io/version (3.2.1): Extracting archive,,1
+	2026-08-02T10:49:23.0303844Z,  - Installing phar-io/manifest (2.0.3): Extracting archive,,1
+	2026-08-02T10:49:23.0770217Z,  - Installing myclabs/deep-copy (1.11.1): Extracting archive,,1
+	2026-08-02T10:49:23.1245138Z,  - Installing phpunit/phpunit (10.4.1): Extracting archive,,1
+	2026-08-02T10:49:23.1555912Z,  - Installing spatie/backtrace (1.5.3): Extracting archive,,1
+	2026-08-02T10:49:23.1930131Z,  - Installing spatie/flare-client-php (1.4.2): Extracting archive,,1
+	2026-08-02T10:49:23.2286597Z,  - Installing spatie/ignition (1.11.2): Extracting archive,,1
+	2026-08-02T10:49:23.2692260Z,  - Installing spatie/laravel-ignition (2.3.1): Extracting archive,,1
+	2026-08-02T10:49:23.5422845Z,  0/38 [>---------------------------]   0%,,1
+	2026-08-02T10:49:23.9900206Z,  7/38 [=====>----------------------]  18%,,1
+	2026-08-02T10:49:24.7506530Z,  8/38 [=====>----------------------]  21%,,1
+	2026-08-02T10:49:25.4641123Z, 16/38 [===========>----------------]  42%,,1
+	2026-08-02T10:49:26.2782952Z, 19/38 [==============>-------------]  50%,,1
+	2026-08-02T10:49:26.9326125Z, 26/38 [===================>--------]  68%,,1
+	2026-08-02T10:49:28.0463091Z, 28/38 [====================>-------]  73%,,1
+	2026-08-02T10:49:28.2960664Z, 34/38 [=========================>--]  89%,,1
+	2026-08-02T10:49:28.4047407Z, 37/38 [===========================>]  97%,,1
+	2026-08-02T10:49:28.4486662Z, 38/38 [============================] 100%,,1
+	2026-08-02T10:49:28.9171317Z,Generating optimized autoload files,,1
+	2026-08-02T10:49:39.7072627Z,> Illuminate\Foundation\ComposerScripts::postAutoloadDump,,1
+	2026-08-02T10:49:39.8018503Z,> @php artisan package:discover --ansi,,1
+	2026-08-02T10:49:40.8583676Z,,,0
+	2026-08-02T10:49:40.9101612Z,  [37;44m INFO [39;49m Discovering packages.  ,,0
+	2026-08-02T10:49:41.0410022Z,,,0
+	2026-08-02T10:49:41.0582512Z,  laravel/breeze [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.1140057Z,  laravel/passport [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.1565148Z,  laravel/sail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.1862978Z,  laravel/sanctum [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.2052468Z,90 packages you are using are looking for funding.,,1
+	2026-08-02T10:49:41.2312605Z,  laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.2522012Z,Use the `composer fund` command to find out more!,,1
+	2026-08-02T10:49:41.2706674Z,  nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.3270412Z,  nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.3648830Z,  nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.3879687Z,  spatie/laravel-ignition [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m,,0
+	2026-08-02T10:49:41.4141065Z,,,0
+	2026-08-02T10:49:41.4319028Z,Build script snippets done in 24 sec(s).,,0
+	2026-08-02T10:49:41.4443672Z,Preparing output...,,0
+	2026-08-02T10:49:41.4736726Z,Using standard output preparation...,,0
+	2026-08-02T10:49:41.4850589Z,,,0
+	2026-08-02T10:49:41.5042926Z,Copying files to destination directory '/home/site/wwwroot'...,,0
+	2026-08-02T10:51:14.9795751Z,Copying to destination directory done in 93 sec(s).,,0
+	2026-08-02T10:51:15.0532264Z,Total time for destination directory preparation done in 93 sec(s).,,0
+	2026-08-02T10:51:15.1399794Z,,,0
+	2026-08-02T10:51:15.1702581Z,Removing existing manifest file,,0
+	2026-08-02T10:51:15.2188874Z,Creating a manifest file...,,0
+	2026-08-02T10:51:15.2715093Z,Manifest file created.,,0
+	2026-08-02T10:51:15.3097402Z,Copying .ostype to manifest output directory.,,0
+	2026-08-02T10:51:15.3493911Z,,,0
+	2026-08-02T10:51:15.3684437Z,Total execution done in 132 sec(s).,,0
+2026-08-02T10:51:16.1964153Z,Running post deployment command(s)...,093ca55c-1e80-4f3a-bfc3-1e71aef8d27a,0
+2026-08-02T10:51:16.3337237Z,,d07e86c6-808d-4b68-ac3e-527f27f87095,0
+2026-08-02T10:51:16.4505262Z,Generating summary of Oryx build,b8d7f917-cb34-4b8f-beec-d6c90c900507,0
+2026-08-02T10:51:16.5736856Z,Parsing the build logs,9f9e2839-13cc-41e4-972c-28c13666c3cb,0
+2026-08-02T10:51:16.6879639Z,Found 0 issue(s),7674f153-2198-442e-a0ad-32d11c396798,0
+2026-08-02T10:51:16.8271158Z,,97cfc9aa-8ce5-4b33-a7cf-69ccc0769fb1,0
+2026-08-02T10:51:16.9335332Z,Build Summary :,69180b2c-8639-42ee-818a-c8157969ebe6,0
+2026-08-02T10:51:17.0464313Z,===============,097395ee-72f7-4a73-ad64-d1140ddba3ae,0
+2026-08-02T10:51:17.1595913Z,Errors (0),5977e003-4145-4d33-8d8e-f0f9d1cf332c,0
+2026-08-02T10:51:17.3280856Z,Warnings (0),01ed8c72-9564-4737-9b11-cb81f40193c5,0
+2026-08-02T10:51:17.4372956Z,,a54fdaa0-1805-457d-8f3f-636196e79533,0
+2026-08-02T10:51:17.5593151Z,Triggering container recycle for OneDeploy by adding/updating restartTrigger.txt to the site root path,7fdd9d97-6908-4f91-8489-b9d3439d7881,0
+2026-08-02T10:51:17.6982097Z,Deployment successful. deployer = OneDeploy deploymentPath = OneDeploy,0eec30fa-8d57-47dc-80d1-86c8d87bc83a,0

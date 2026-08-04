@@ -1,0 +1,30 @@
+<step title="Incoming Request" date="2026-08-02T10:44:11.217" instance="cbdd36" url="/api/publish?type=zip" method="POST" type="request" pid="835,1,23" Accept="*/*" Host="qualityiq-bnhwhpf4fnd8a5bu.scm.centralindia-01.azurewebsites.net" User-Agent="AZURECLI/2.74.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bas..." Cache-Control="no-cache" Content-Type="application/octet-stream" Cookie="ARRAffinity=cbdd362fa4ef45d234c6d90da32d24ba071c218e677864a8ea9a8caf7da74954; ARRAffinitySameSite=cbdd362fa4ef45d234c6d90da32d24ba071c218e677864a8ea9a8caf7da74954" Content-Length="28593137" x-ms-client-request-id="0f4b5a13-8e5f-11f1-87f1-342eb79b3e5c" x-ms-artifact-checksum="c8ffe3a491b88d49173e407ffec1a71e042a6df08b734d3229f794c8fbb5dd89" X-ARR-LOG-ID="0f4b5a13-8e5f-11f1-87f1-342eb79b3e5c" CLIENT-IP="120.60.60.3:59965" X-SITE-DEPLOYMENT-ID="QualityIQ" WAS-DEFAULT-HOSTNAME="qualityiq-bnhwhpf4fnd8a5bu.scm.centralindia-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?type=zip" X-Client-IP="120.60.60.3" X-Client-Port="59965" >
+  <step title="OneDeploy" date="2026-08-02T10:44:11.423" >
+    <step title="Starting PushDeployAsync" date="2026-08-02T10:44:11.525" /><!-- duration: 41ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/57eeab3c-78aa-43a8-b107-f65d742b2458.zip" date="2026-08-02T10:44:11.690" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/57eeab3c-78aa-43a8-b107-f65d742b2458.zip" date="2026-08-02T10:44:11.768" /><!-- duration: 45ms -->
+      <step title="Writing zip file to /tmp/zipdeploy/57eeab3c-78aa-43a8-b107-f65d742b2458.zip" date="2026-08-02T10:44:11.865" /><!-- duration: 7198ms -->
+    </step><!-- duration: 13616ms -->
+    <step title="Attempting to fetch target branch HEAD" date="2026-08-02T10:44:25.405" /><!-- duration: 10ms -->
+    <step title="Acquiring Deployment Lock" date="2026-08-02T10:44:25.452" /><!-- duration: 27ms -->
+    <step title="Acquired Deployment Lock" date="2026-08-02T10:44:25.688" /><!-- duration: 25ms -->
+    <step title="Performing fetch based deployment" date="2026-08-02T10:44:25.806" >
+      <step title="Creating temporary deployment" date="2026-08-02T10:44:25.846" /><!-- duration: 451ms -->
+      <step title="Releasing Deployment Lock" date="2026-08-02T10:44:28.149" /><!-- duration: 10ms -->
+      <step title="Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/57eeab3c-78aa-43a8-b107-f65d742b2458.zip (27.27 MB) to /tmp/zipdeploy/extracted" date="2026-08-02T10:44:28.640" >
+        <step title="ChmodRecursive Process exited with total time taken in ms: 965" date="2026-08-02T10:45:09.836" /><!-- duration: 27ms -->
+      </step><!-- duration: 41235ms -->
+      <step title="None repository commit" date="2026-08-02T10:45:09.896" >
+        <step title="Commit id: a450f569-3450-40ca-8f71-9d58f4451455" date="2026-08-02T10:45:09.973" Message="OneDeploy" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 8ms -->
+      </step><!-- duration: 104ms -->
+      <step title="Deployment timer started" date="2026-08-02T10:45:12.012" >
+        <step title="DeploymentManager.Deploy(id:a450f569-3450-40ca-8f71-9d58f4451455)" date="2026-08-02T10:45:12.016" >
+          <step title="Collecting changeset information" date="2026-08-02T10:45:12.038" /><!-- duration: 90ms -->
+          <step title="Updating submodules" date="2026-08-02T10:45:12.132" /><!-- duration: 1161ms -->
+          <step title="Determining deployment builder" date="2026-08-02T10:45:13.566" >
+            <step title="Builder is OneDeployBuilder" date="2026-08-02T10:45:13.581" /><!-- duration: 3ms -->
+          </step><!-- duration: 26ms -->
+          <step title="PreDeployment: context.CleanOutputPath False" date="2026-08-02T10:45:13.648" >
+            <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2026-08-02T10:45:13.811" >
+              <step title="Building" date="2026-08-02T10:45:14.082" >
+                <step title="Executing external process" date="2026-08-02T10:45:15.001" type="process" path="starter.sh" arguments="/opt/Kudu/Scripts/parallel_rsync.sh /tmp/zipdeploy/extracted /home/site/wwwroot 8 /tmp/ False False  " 

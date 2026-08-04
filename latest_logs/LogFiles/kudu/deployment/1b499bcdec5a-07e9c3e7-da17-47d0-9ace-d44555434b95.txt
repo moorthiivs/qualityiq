@@ -1,0 +1,46 @@
+2026-08-02T10:02:41  Fetching changes.
+2026-08-02T10:02:42    Starting  LocalZipHandler
+2026-08-02T10:02:42    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/3efc0bfd-a6bf-4792-bbfa-8b51bf4acc34.zip (27.26 MB) to /tmp/zipdeploy/extracted
+2026-08-02T10:03:31  Updating submodules.
+2026-08-02T10:03:31  Preparing deployment for commit id '22eba17b-2'.
+2026-08-02T10:03:31  PreDeployment: context.CleanOutputPath False
+2026-08-02T10:03:32  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-08-02T10:03:32  Repository path is /tmp/zipdeploy/extracted
+2026-08-02T10:03:32  Running oryx build...
+2026-08-02T10:03:32    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform php --platform-version 8.4 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8def07d4ed000ef | tee /tmp/oryx-build.log
+2026-08-02T10:03:37    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-08-02T10:03:37    You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-08-02T10:03:37    
+2026-08-02T10:03:37    Oryx Version: 0.2.20260513.1+5c94136d0d5c06204a00d688dc7aea902452e52c, Commit: 5c94136d0d5c06204a00d688dc7aea902452e52c, ReleaseTagName: 20260513.1
+2026-08-02T10:03:37    
+2026-08-02T10:03:37    Build Operation ID: 5af0d5859d21aaec
+2026-08-02T10:03:37    Repository Commit : 22eba17b-2c38-4bb8-80b9-72eabe1a6e59
+2026-08-02T10:03:37    OS Type           : bookworm
+2026-08-02T10:03:37    Image Type        : githubactions
+2026-08-02T10:03:37    
+2026-08-02T10:03:37    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-08-02T10:03:38    Backup SDK Storage URL: 
+2026-08-02T10:03:38    ACR SDK Registry URL: (not set)
+2026-08-02T10:03:38    SDK provider status:
+2026-08-02T10:03:38      External ACR SDK provider: Enabled
+2026-08-02T10:03:38      External SDK provider: Enabled
+2026-08-02T10:03:38      Direct ACR SDK provider: Disabled
+2026-08-02T10:03:38      Blob SDK provider: Enabled
+2026-08-02T10:03:38    External ACR SDK provider is enabled. Only using user-specified platform: php
+2026-08-02T10:03:38    Detecting platforms...
+2026-08-02T10:03:42    External ACR provider resolved version '8.4.16' for php.
+2026-08-02T10:03:43    Version resolved using external ACR SDK provider.
+2026-08-02T10:03:43    Version resolved using external ACR SDK provider.
+2026-08-02T10:03:43    Detected following platforms:
+2026-08-02T10:03:43      php: 8.4.16
+2026-08-02T10:03:43    Requesting SDK from ACR via external provider: php 8.4.16 (bookworm)
+2026-08-02T10:03:44    Successfully pulled SDK from ACR via external provider: php 8.4.16
+2026-08-02T10:03:44    SDK for 'php' version '8.4.16' fetched via external ACR provider.
+2026-08-02T10:03:45    Requesting SDK from ACR via external provider: php-composer 2.6.2 (bookworm)
+2026-08-02T10:03:46    Successfully pulled SDK from ACR via external provider: php-composer 2.6.2
+2026-08-02T10:03:46    SDK for 'php-composer' version '2.6.2' fetched via external ACR provider.
+2026-08-02T10:03:46    Version '8.4.16' of platform 'php' is not installed. Generating script to install it...
+2026-08-02T10:03:47    
+2026-08-02T10:03:47    Using intermediate directory '/tmp/8def07d4ed000ef'.
+2026-08-02T10:03:47    
+2026-08-02T10:03:47    Copying files to the intermediate directory...

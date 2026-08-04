@@ -1,0 +1,24 @@
+2026-08-02T10:45:12.2640910Z,Updating submodules.,15a74c9e-30f7-4f09-beab-d2a7289d4e67,0
+2026-08-02T10:45:13.3968617Z,Preparing deployment for commit id 'a450f569-3'.,f27bda4b-2595-4142-aa93-6e5cca24070c,0
+2026-08-02T10:45:13.7831521Z,PreDeployment: context.CleanOutputPath False,04370be5-a054-4448-a105-23518dacd57c,0
+2026-08-02T10:45:14.0406759Z,PreDeployment: context.OutputPath /home/site/wwwroot,5fe050ce-3ca8-4fdb-adfe-c0080d691533,0
+2026-08-02T10:45:14.2569338Z,Running build. Project type: OneDeploy,727c3db4-c8e9-4cee-a7dd-c4c2ee053e3e,0
+2026-08-02T10:45:14.4654022Z,Copying the manifest,02e2bc04-0f38-465f-8894-6ea26b488794,0
+2026-08-02T10:45:14.6813273Z,Running deployment command...,b29c81b5-2159-450e-87e4-2ba3a49fb7bc,0
+	2026-08-02T10:45:14.7127531Z,Command: /opt/Kudu/Scripts/parallel_rsync.sh /tmp/zipdeploy/extracted /home/site/wwwroot 8 /tmp/ False False  ,,0
+	2026-08-02T10:45:15.1813004Z,Run rsync from: /tmp/zipdeploy/extracted/ to: /home/site/wwwroot/ in 8 parallel threads,,0
+	2026-08-02T10:45:15.3211921Z,Delete options: clean=False&comma; use manifest=False&comma; directory to ignore=,,0
+	2026-08-02T10:45:15.3789958Z,Prev manifest = /home/site/deployments/1769cf11-0b66-4eaa-ba6f-0f864c69a521/manifest and next /home/site/deployments/a450f569-3450-40ca-8f71-9d58f4451455/manifest,,0
+	2026-08-02T10:45:15.4283479Z,Cleaning up /tmp//filelist.txt and /tmp//splits,,0
+	2026-08-02T10:45:15.5071150Z,Creating a list of all files at /tmp//filelist.txt,,0
+	2026-08-02T10:45:15.6257239Z,No directory to exclude.,,0
+	2026-08-02T10:45:16.2800804Z,Created /tmp//filelist.txt. Total number of files to be synced = 9226.,,0
+	2026-08-02T10:45:16.4141652Z,Created batches from the list of files. Processing 1154 files in each thread,,0
+	2026-08-02T10:45:16.9240590Z,Running rsync for filelist /tmp//splits/split.aa from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T10:45:17.6536950Z,Running rsync for filelist /tmp//splits/split.ac from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T10:45:18.3032701Z,Running rsync for filelist /tmp//splits/split.ad from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T10:45:18.4478292Z,Running rsync for filelist /tmp//splits/split.ab from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T10:45:18.7804770Z,Running rsync for filelist /tmp//splits/split.ae from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T10:45:19.0799539Z,Running rsync for filelist /tmp//splits/split.af from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T10:45:19.1608799Z,Running rsync for filelist /tmp//splits/split.ag from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T10:45:19.9501998Z,Running rsync for filelist /tmp//splits/split.ah from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
